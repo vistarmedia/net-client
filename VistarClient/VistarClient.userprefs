@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestConsole/Main.cs">
+    <Files>
+      <File FileName="VistarClient/Entities/DisplayArea.cs" Line="10" Column="3" />
+      <File FileName="VistarClient/Request/DisplayAreaRequest.cs" Line="8" Column="37" />
+      <File FileName="TestConsole/Main.cs" Line="36" Column="39" />
+      <File FileName="VistarClient/Request/ApiRequest.cs" Line="3" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/tom/vistar/net-client/VistarClient/TestConsole/Main.cs" line="37" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
