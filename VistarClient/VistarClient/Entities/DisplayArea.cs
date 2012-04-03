@@ -1,38 +1,29 @@
 using System;
 using System.Collections.Generic;
-using RestSharp.Serializers;
+using Newtonsoft.Json;
 
 namespace VistarClient.Entities {
-//	[SerializeAs(Name = "display_area")]
+	[JsonObject(MemberSerialization.OptIn)]
 	public class DisplayArea {
-//		[SerializeAs(Name="id")]
-//		public string Id{ get; set; }
-//		
-//		[SerializeAs(Name="width")]
-//		public int Width{ get; set; }
-//
-//		[SerializeAs(Name="height")]
-//		public int Height{ get; set; }
-//
-//		[SerializeAs(Name="supported_media")]
-//		public List<string> SupportedMedia{ get; set; }
-//
-//		[SerializeAs(Name="min_duration")]
-//		public int? MinDuration { get; set; }
-//
-//		[SerializeAs(Name="max_duration")]
-//		public int? MaxDuration{ get; set; }
-//
-//		[SerializeAs(Name="allow_audio")]
-//		public bool AllowAudio{ get; set; }
-		
+		[JsonProperty(PropertyName="id")]
 		public string id { get; set; }
+		
+		[JsonProperty(PropertyName="width")]
 		public int width { get; set; }
+		
+		[JsonProperty(PropertyName="height")]
 		public int height { get; set; }
+		
+		[JsonProperty(PropertyName="supported_media")]
 		public List<string> supported_media { get; set; }
+		
+		[JsonProperty(PropertyName="min_duration")]
 		public int? min_duration { get; set; }
+		
+		[JsonProperty(PropertyName="max_duration")]
 		public int? max_duration { get; set; }
+
+		[JsonProperty(PropertyName="allow_audio")]
 		public bool allow_audio{ get; set; }
 	}
 }
-

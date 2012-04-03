@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 
 namespace VistarClient.Entities {
 	public class Advertisement {
@@ -21,6 +22,23 @@ namespace VistarClient.Entities {
 		public string mime_type { get; set; }
 
 		public int length_in_seconds{ get; set; }
+		
+		public void SendProofOfPlay() {
+			var request = (HttpWebRequest)WebRequest.Create(proof_of_play_url);
+			
+			try {
+				request.GetResponse();
+			}
+			catch(WebException ex) {
+				var response = (HttpWebResponse)ex.Response;
+				if(response.StatusCode == HttpStatusCode.BadRequest) {
+					throw new InvalidLeaseException();	
+				}
+				else if(response.StatusCode != HttpStatusCode.NoContent) {
+					throw new ApiException(ex.Message);
+				}
+			}
+		}
 	}
 }
 

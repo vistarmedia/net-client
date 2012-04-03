@@ -2,21 +2,29 @@ using System;
 using VistarClient.Entities;
 using VistarClient.Request;
 using RestSharp;
-using System.Configuration;
 
 namespace VistarClient {
 	public class ApiClient {
-		const string BASE_URL = @"http://dev.api.vistarmedia.com/api/v1/";
+		static string host = GetHost();
 		
-		public Advertisement GetAd(AdRequest request){
-			
-			var client = new RestClient(BASE_URL);
-			var restRequest = new RestRequest("get_ad/json", Method.POST);
+		public Advertisement GetAd(AdRequest request) {
+			var client = new RestClient(host);
+			var restRequest = new RestRequest("api/v1/get_ad/json", Method.POST);
 			
 			restRequest.RequestFormat = DataFormat.Json;
-			restRequest.AddParameter("text/json", restRequest.JsonSerializer.Serialize(request), ParameterType.RequestBody);
-	
+			string data = restRequest.JsonSerializer.Serialize(request);
+			restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
+			
 			return client.Execute<AdvertisementResponse>(restRequest).Data.advertisement[0];
+		}
+		
+		static string GetHost() {
+			var host = System.Configuration.ConfigurationManager.AppSettings["ApiHost"];
+			if(host != null) {
+				return string.Format("http://{0}", host);
+			}
+			
+			throw new ApiException("You must specify an ApiHost in your application's configuration file.");
 		}
 	}
 }

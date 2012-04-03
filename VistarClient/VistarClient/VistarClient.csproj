@@ -35,6 +35,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\RestSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -44,6 +49,8 @@
     <Compile Include="Request\AdvertisementResponse.cs" />
     <Compile Include="Request\AdRequest.cs" />
     <Compile Include="ApiClient.cs" />
+    <Compile Include="InvalidLeaseException.cs" />
+    <Compile Include="ApiException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -54,5 +61,7 @@
   <ItemGroup>
     <None Include="lib\RestSharp.dll" />
     <None Include="lib\RestSharp.xml" />
+    <None Include="lib\Newtonsoft.Json.dll" />
+    <None Include="VistarClient.dll.config" />
   </ItemGroup>
 </Project>

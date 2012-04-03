@@ -7,9 +7,9 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("VistarClient")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("VistarMedia")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("tom")]
+[assembly: AssemblyCopyright("2012 VistarMedia")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
