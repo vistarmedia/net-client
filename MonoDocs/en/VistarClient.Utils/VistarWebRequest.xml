@@ -3,12 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VistarWebRequest extends System.Object implements class VistarClient.Utils.IVistarWebRequest" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
-    <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,59 +14,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>
-    </summary>
-    <remarks>
-    </remarks>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VistarWebRequest (System.Net.HttpWebRequest request);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.HttpWebRequest request) cil managed" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="request" Type="System.Net.HttpWebRequest" />
-      </Parameters>
-      <Docs>
-        <param name="request">
-        </param>
-        <summary>
-        </summary>
-        <remarks>
-        </remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetResponse">
       <MemberSignature Language="C#" Value="public System.Net.WebResponse GetResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebResponse GetResponse() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebResponse</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-        </summary>
-        <returns>
-        </returns>
-        <remarks>
-        </remarks>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

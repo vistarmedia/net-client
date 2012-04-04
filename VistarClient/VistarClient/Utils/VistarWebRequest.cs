@@ -9,7 +9,7 @@ namespace VistarClient.Utils {
   public class VistarWebRequest : IVistarWebRequest {
     readonly HttpWebRequest request;
    
-    public VistarWebRequest(HttpWebRequest request) {
+    internal VistarWebRequest(HttpWebRequest request) {
       this.request = request;  
     }
    
