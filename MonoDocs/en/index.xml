@@ -1,0 +1,51 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="VistarClient" Version="1.0.4477.18189">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("2012 VistarMedia")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("VistarClient")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="VistarClient">
+      <Type Name="ApiClient" Kind="Class" />
+      <Type Name="ApiException" Kind="Class" />
+      <Type Name="InvalidLeaseException" Kind="Class" />
+    </Namespace>
+    <Namespace Name="VistarClient.Entities">
+      <Type Name="Advertisement" Kind="Class" />
+      <Type Name="DeviceAttribute" Kind="Class" />
+      <Type Name="DisplayArea" Kind="Class" />
+    </Namespace>
+    <Namespace Name="VistarClient.Request">
+      <Type Name="AdRequest" Kind="Class" />
+      <Type Name="AdvertisementResponse" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>VistarClient</Title>
+</Overview>

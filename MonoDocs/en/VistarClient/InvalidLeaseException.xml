@@ -1,0 +1,31 @@
+<Type Name="InvalidLeaseException" FullName="VistarClient.InvalidLeaseException">
+  <TypeSignature Language="C#" Value="public class InvalidLeaseException : VistarClient.ApiException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InvalidLeaseException extends VistarClient.ApiException" />
+  <AssemblyInfo>
+    <AssemblyName>VistarClient</AssemblyName>
+    <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>VistarClient.ApiException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidLeaseException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -10,11 +10,10 @@ namespace VistarClient {
 		public Advertisement GetAd(AdRequest request) {
 			var client = new RestClient(host);
 			var restRequest = new RestRequest("api/v1/get_ad/json", Method.POST);
-			
 			restRequest.RequestFormat = DataFormat.Json;
 			string data = restRequest.JsonSerializer.Serialize(request);
-			restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
 			
+			restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
 			return client.Execute<AdvertisementResponse>(restRequest).Data.advertisement[0];
 		}
 		
