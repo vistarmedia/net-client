@@ -1,6 +1,6 @@
 <Namespace Name="VistarClient.Request">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains objects used for communication to the API.</summary>
+    <remarks></remarks>
   </Docs>
 </Namespace>

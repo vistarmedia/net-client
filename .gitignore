@@ -4,3 +4,4 @@ obj
 *.userprefs
 test-results
 run_test.sh
+TestResults.xml

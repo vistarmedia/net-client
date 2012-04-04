@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="VistarClient" Version="1.0.4477.18189">
+    <Assembly Name="VistarClient" Version="1.0.4477.31328">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>
@@ -29,8 +29,10 @@
       </Attributes>
     </Assembly>
   </Assemblies>
-  <Remarks>To be added.</Remarks>
-  <Copyright>To be added.</Copyright>
+  <Remarks>
+  </Remarks>
+  <Copyright>
+  </Copyright>
   <Types>
     <Namespace Name="VistarClient">
       <Type Name="ApiClient" Kind="Class" />
@@ -45,6 +47,13 @@
     <Namespace Name="VistarClient.Request">
       <Type Name="AdRequest" Kind="Class" />
       <Type Name="AdvertisementResponse" Kind="Class" />
+    </Namespace>
+    <Namespace Name="VistarClient.Utils">
+      <Type Name="IVistarWebRequest" Kind="Interface" />
+      <Type Name="IVistarWebRequestFactory" Kind="Interface" />
+      <Type Name="VistarWebException" Kind="Class" />
+      <Type Name="VistarWebRequest" Kind="Class" />
+      <Type Name="VistarWebRequestFactory" Kind="Class" />
     </Namespace>
   </Types>
   <Title>VistarClient</Title>

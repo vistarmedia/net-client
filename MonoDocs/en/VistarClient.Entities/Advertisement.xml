@@ -4,14 +4,22 @@
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The object represents an Advertisement.</summary>
-    <remarks></remarks>
+    <summary>
+    </summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -20,11 +28,42 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Default constructor</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Advertisement (VistarClient.Utils.IVistarWebRequestFactory requestFactory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class VistarClient.Utils.IVistarWebRequestFactory requestFactory) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="requestFactory" Type="VistarClient.Utils.IVistarWebRequestFactory" />
+      </Parameters>
+      <Docs>
+        <param name="requestFactory">
+        </param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="asset_id">
@@ -33,14 +72,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
-        <value></value>
-        <remarks></remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="asset_url">
@@ -49,14 +97,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary></summary>
-        <value></value>
-        <remarks></remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="display_area_Id">
@@ -65,14 +122,22 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>The associated DisplayArea id.</summary>
-        <value></value>
-        <remarks></remarks>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="height">
@@ -81,14 +146,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="id">
@@ -97,14 +171,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="lease_expiry">
@@ -113,14 +196,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="length_in_seconds">
@@ -129,14 +221,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="mime_type">
@@ -145,14 +246,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="proof_of_play_url">
@@ -161,14 +271,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendProofOfPlay">
@@ -177,14 +296,22 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="width">
@@ -193,14 +320,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,12 @@
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+    <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -11,7 +17,8 @@
   <Interfaces />
   <Docs>
     <summary>This class is used to submit ad requests.</summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -20,11 +27,41 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Default constructor</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApiClient (RestSharp.IRestClient restClient, RestSharp.IRestRequest restRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class RestSharp.IRestClient restClient, class RestSharp.IRestRequest restRequest) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="restClient" Type="RestSharp.IRestClient" />
+        <Parameter Name="restRequest" Type="RestSharp.IRestRequest" />
+      </Parameters>
+      <Docs>
+        <param name="restClient">To be added.</param>
+        <param name="restRequest">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAd">
@@ -41,10 +78,36 @@
         <Parameter Name="request" Type="VistarClient.Request.AdRequest" />
       </Parameters>
       <Docs>
-	<param name="request">request</param>
+        <param name="request">request</param>
         <summary>Populated AdRequest object to submit.</summary>
         <returns>Created Advertisement object</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitAdRequest">
+      <MemberSignature Language="C#" Value="public VistarClient.Entities.Advertisement SubmitAdRequest (VistarClient.Request.AdRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class VistarClient.Entities.Advertisement SubmitAdRequest(class VistarClient.Request.AdRequest request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
+        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>VistarClient.Entities.Advertisement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="VistarClient.Request.AdRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

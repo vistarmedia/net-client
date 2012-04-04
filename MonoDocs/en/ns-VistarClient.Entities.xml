@@ -1,6 +1,6 @@
 <Namespace Name="VistarClient.Entities">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This namespace contains classes which model the API messages.</summary>
+    <remarks></remarks>
   </Docs>
 </Namespace>

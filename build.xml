@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--<Import Project="VistarClient/lib/MSBuild.Community.Tasks.Targets" />-->
+  <Target Name="Build">
+    <MSBuild Projects="VistarClient/VistarClient/VistarClient.csproj;VistarClient/VistarClient.Tests/VistarClient.Tests.csproj"
+      Properties="Configuration=Release" />
+  </Target>
+  <Target Name="BuildWithTests" DependsOnTargets="Build">
+    <!--<NUnit ToolPath="/usr/bin/nunit-console" Assemblies="VistarClient/VistarClient.Tests/bin/Release/VistarClient.Tests.dll" />-->
+    <Exec Command="nunit-console VistarClient/VistarClient.Tests/bin/Release/VistarClient.Tests.dll" />
+  </Target>
+</Project>

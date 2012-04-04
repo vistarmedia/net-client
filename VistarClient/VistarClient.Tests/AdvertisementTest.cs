@@ -55,6 +55,31 @@ namespace VistarClient.Tests {
         });
       }
     }
+   
+   [Test]
+    public void SendProofOfPlay_Throws_ApiException_When_Error_NotBadRequest() {
+      var mockery = new MockRepository();
+
+      var requestFactory = mockery.StrictMock<IVistarWebRequestFactory>();
+      var request = mockery.StrictMock<IVistarWebRequest>();
+
+      var exception = new VistarWebException(new WebException(), HttpStatusCode.RequestTimeout);
+
+      var advertisement = new Advertisement(requestFactory) {
+        proof_of_play_url = "http://test.url/proof_of_play.html"
+      };
+
+      using(mockery.Record()) {
+        Expect.Call(requestFactory.Create(advertisement.proof_of_play_url)).Return(request);
+        Expect.Call(request.GetResponse()).Throw(exception);
+      }
+
+      using(mockery.Playback()) {
+        Assert.Throws(typeof(ApiException), () => {
+          advertisement.SendProofOfPlay();
+        });
+      }
+    }
   }
 }
 
