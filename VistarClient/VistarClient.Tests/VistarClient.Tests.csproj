@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FFFD37AC-554E-4269-8C44-E78281DAFCF4}</ProjectGuid>
+    <ProjectGuid>{BF550905-3C8A-417B-90BE-ED89118487B7}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>VistarClient</RootNamespace>
-    <AssemblyName>VistarClient</AssemblyName>
+    <RootNamespace>VistarClient.Tests</RootNamespace>
+    <AssemblyName>VistarClient.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,37 +31,38 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=0.0.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Rhino.Mocks.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp, Version=102.7.0.0, Culture=neutral, PublicKeyToken=null">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\RestSharp.dll</HintPath>
     </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Castle.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Entities\DisplayArea.cs" />
-    <Compile Include="Entities\DeviceAttribute.cs" />
-    <Compile Include="Entities\Advertisement.cs" />
-    <Compile Include="Request\AdvertisementResponse.cs" />
-    <Compile Include="Request\AdRequest.cs" />
-    <Compile Include="ApiClient.cs" />
-    <Compile Include="InvalidLeaseException.cs" />
-    <Compile Include="ApiException.cs" />
-    <Compile Include="Utils\VistarWebRequestFactory.cs" />
-    <Compile Include="Utils\VistarWebRequest.cs" />
-    <Compile Include="Utils\VistarWebException.cs" />
+    <Compile Include="ApiClientTest.cs" />
+    <Compile Include="AdvertisementTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Request\" />
-    <Folder Include="Utils\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="VistarClient.dll.config" />
+    <ProjectReference Include="..\VistarClient\VistarClient.csproj">
+      <Project>{FFFD37AC-554E-4269-8C44-E78281DAFCF4}</Project>
+      <Name>VistarClient</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

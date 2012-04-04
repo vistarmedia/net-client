@@ -2,3 +2,4 @@ TestConsole
 bin
 obj
 *.userprefs
+test-results
