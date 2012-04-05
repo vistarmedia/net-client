@@ -1,16 +1,16 @@
 using System;
-using NUnit.Framework;
-using Rhino.Mocks;
-using RestSharp;
-using VistarClient.Request;
-using RestSharp.Serializers;
-using VistarClient.Entities;
 using System.Collections.Generic;
+using NUnit.Framework;
+using RestSharp;
+using RestSharp.Serializers;
+using Rhino.Mocks;
+using VistarClient.Entities;
+using VistarClient.Request;
 
 namespace VistarClient.Tests {
  [TestFixture]
   public class ApiClientTest {
-   
+
    [Test]
     public void SubmitAdRequest_Success() {
       var mockery = new MockRepository();
@@ -22,7 +22,7 @@ namespace VistarClient.Tests {
       var str = "serialized data";
      
       var ad = new Advertisement();
-      var advertisementResponse = new AdvertisementResponse{advertisement = new List<Advertisement>{ad}};
+      var advertisementResponse = new AdvertisementResponse{Advertisements = new List<Advertisement>{ad}};
       var restResponse = new RestResponse<AdvertisementResponse>();
       restResponse.Data = advertisementResponse;
      

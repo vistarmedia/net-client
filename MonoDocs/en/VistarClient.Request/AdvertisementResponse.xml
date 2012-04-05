@@ -3,22 +3,14 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdvertisementResponse extends System.Object" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
-    <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-    </summary>
+    <summary>Models the API response from an ad request.</summary>
     <remarks>
     </remarks>
   </Docs>
@@ -28,14 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,20 +30,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="advertisement">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt; advertisement { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt; advertisement" />
+    <Member MemberName="Advertisements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt; Advertisements { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt; Advertisements" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="advertisement")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;</ReturnType>
       </ReturnValue>

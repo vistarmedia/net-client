@@ -1,5 +1,5 @@
-using System;
 using System.Net;
+using Newtonsoft.Json;
 using VistarClient.Utils;
 
 namespace VistarClient.Entities {
@@ -12,29 +12,39 @@ namespace VistarClient.Entities {
     public Advertisement(IVistarWebRequestFactory requestFactory) {
       this.requestFactory = requestFactory;
     }
-		
-    public string id { get; set; }
 
-    public string proof_of_play_url { get; set; }
+    [JsonProperty(PropertyName="id")]
+    public string Id { get; set; }
 
-    public long lease_expiry { get; set; }
+    [JsonProperty(PropertyName="proof_of_play_url")]
+    public string ProofOfPlayUrl { get; set; }
 
-    public string display_area_Id { get; set; }
+    [JsonProperty(PropertyName="lease_expiry")]
+    public long LeaseExpiry { get; set; }
 
-    public string asset_id { get; set; }
-		
-    public string asset_url { get; set; }
-		
-    public int width { get; set; }
+    [JsonProperty(PropertyName="display_area_id")]
+    public string DisplayAreaId { get; set; }
 
-    public int height { get; set; }
+    [JsonProperty(PropertyName="asset_id")]
+    public string AssetId { get; set; }
 
-    public string mime_type { get; set; }
+    [JsonProperty(PropertyName="asset_url")]
+    public string AssetUrl { get; set; }
 
-    public int length_in_seconds{ get; set; }
+    [JsonProperty(PropertyName="width")]
+    public int Width { get; set; }
+
+    [JsonProperty(PropertyName="height")]
+    public int Height { get; set; }
+
+    [JsonProperty(PropertyName="mime_type")]
+    public string MimeType { get; set; }
+
+    [JsonProperty(PropertyName="length_in_seconds")]
+    public int LengthInSeconds{ get; set; }
 		
     public void SendProofOfPlay() {
-      var request = requestFactory.Create(proof_of_play_url);
+      var request = requestFactory.Create(ProofOfPlayUrl);
 			
       try {
         request.GetResponse();

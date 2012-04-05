@@ -11,13 +11,15 @@
     <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
     <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
     <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>This class is used to submit ad requests.</summary>
+    <summary>Used to submit ad requests via SubmitAdRequest().</summary>
     <remarks>
     </remarks>
   </Docs>
@@ -35,6 +37,8 @@
         <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,35 +59,19 @@
         <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="restClient" Type="RestSharp.IRestClient" />
         <Parameter Name="restRequest" Type="RestSharp.IRestRequest" />
       </Parameters>
       <Docs>
-        <param name="restClient">To be added.</param>
-        <param name="restRequest">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetAd">
-      <MemberSignature Language="C#" Value="public VistarClient.Entities.Advertisement GetAd (VistarClient.Request.AdRequest request);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class VistarClient.Entities.Advertisement GetAd(class VistarClient.Request.AdRequest request) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>VistarClient.Entities.Advertisement</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="request" Type="VistarClient.Request.AdRequest" />
-      </Parameters>
-      <Docs>
-        <param name="request">request</param>
-        <summary>Populated AdRequest object to submit.</summary>
-        <returns>Created Advertisement object</returns>
+        <param name="restClient">
+        </param>
+        <param name="restRequest">
+        </param>
+        <summary>Used for testing purposes only.</summary>
         <remarks>
         </remarks>
       </Docs>
@@ -100,6 +88,8 @@
         <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>VistarClient.Entities.Advertisement</ReturnType>
@@ -108,10 +98,10 @@
         <Parameter Name="request" Type="VistarClient.Request.AdRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="request">A populated AdRequest object describing the advertisement to be created.</param>
+        <summary>Submit an ad request to the server.</summary>
+        <returns>Advertisement object representing the created ad.</returns>
+        <remarks>Will return an ApiException if call fails.</remarks>
       </Docs>
     </Member>
   </Members>

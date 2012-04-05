@@ -4,14 +4,17 @@
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Wrapper for WebException.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -20,16 +23,21 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="innerException" Type="System.Net.WebException" />
         <Parameter Name="statusCode" Type="System.Net.HttpStatusCode" />
       </Parameters>
       <Docs>
-        <param name="innerException">To be added.</param>
-        <param name="statusCode">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="innerException">
+        </param>
+        <param name="statusCode">HTTP status code from the original WebException.</param>
+        <summary>
+        </summary>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusCode">
@@ -38,14 +46,19 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpStatusCode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,9 +1,9 @@
 using System;
-using NUnit.Framework;
-using VistarClient.Entities;
-using Rhino.Mocks;
-using VistarClient.Utils;
 using System.Net;
+using NUnit.Framework;
+using Rhino.Mocks;
+using VistarClient.Entities;
+using VistarClient.Utils;
 
 namespace VistarClient.Tests {
  [TestFixture]
@@ -18,11 +18,11 @@ namespace VistarClient.Tests {
       var response = mockery.PartialMock<WebResponse>();
 
       var advertisement = new Advertisement(requestFactory) {
-        proof_of_play_url = "http://test.url/proof_of_play.html"
+        ProofOfPlayUrl = "http://test.url/proof_of_play.html"
       };
 
       using(mockery.Record()) {
-        Expect.Call(requestFactory.Create(advertisement.proof_of_play_url)).Return(request);
+        Expect.Call(requestFactory.Create(advertisement.ProofOfPlayUrl)).Return(request);
         Expect.Call(request.GetResponse()).Return(response);
       }
 
@@ -41,11 +41,11 @@ namespace VistarClient.Tests {
       var exception = new VistarWebException(new WebException(), HttpStatusCode.BadRequest);
 
       var advertisement = new Advertisement(requestFactory) {
-        proof_of_play_url = "http://test.url/proof_of_play.html"
+        ProofOfPlayUrl = "http://test.url/proof_of_play.html"
       };
 
       using(mockery.Record()) {
-        Expect.Call(requestFactory.Create(advertisement.proof_of_play_url)).Return(request);
+        Expect.Call(requestFactory.Create(advertisement.ProofOfPlayUrl)).Return(request);
         Expect.Call(request.GetResponse()).Throw(exception);
       }
 
@@ -66,11 +66,11 @@ namespace VistarClient.Tests {
       var exception = new VistarWebException(new WebException(), HttpStatusCode.RequestTimeout);
 
       var advertisement = new Advertisement(requestFactory) {
-        proof_of_play_url = "http://test.url/proof_of_play.html"
+        ProofOfPlayUrl = "http://test.url/proof_of_play.html"
       };
 
       using(mockery.Record()) {
-        Expect.Call(requestFactory.Create(advertisement.proof_of_play_url)).Return(request);
+        Expect.Call(requestFactory.Create(advertisement.ProofOfPlayUrl)).Return(request);
         Expect.Call(request.GetResponse()).Throw(exception);
       }
 

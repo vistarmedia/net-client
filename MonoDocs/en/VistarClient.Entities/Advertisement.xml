@@ -3,21 +3,14 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Advertisement extends System.Object" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
-    <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
+    <summary>Models a created ad.
     </summary>
     <remarks>
     </remarks>
@@ -28,18 +21,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Default constructor</summary>
+        <summary>
+        </summary>
         <remarks>
         </remarks>
       </Docs>
@@ -49,13 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class VistarClient.Utils.IVistarWebRequestFactory requestFactory) cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="requestFactory" Type="VistarClient.Utils.IVistarWebRequestFactory" />
@@ -63,26 +44,23 @@
       <Docs>
         <param name="requestFactory">
         </param>
-        <summary>
-        </summary>
+        <summary>Used for testing purposes only.</summary>
         <remarks>
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="asset_id">
-      <MemberSignature Language="C#" Value="public string asset_id { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string asset_id" />
+    <Member MemberName="AssetId">
+      <MemberSignature Language="C#" Value="public string AssetId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="asset_id")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -95,20 +73,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="asset_url">
-      <MemberSignature Language="C#" Value="public string asset_url { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string asset_url" />
+    <Member MemberName="AssetUrl">
+      <MemberSignature Language="C#" Value="public string AssetUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssetUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="asset_url")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -121,45 +97,42 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="display_area_Id">
-      <MemberSignature Language="C#" Value="public string display_area_Id { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string display_area_Id" />
+    <Member MemberName="DisplayAreaId">
+      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayAreaId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="display_area_id")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The associated DisplayArea id.</summary>
+        <summary>
+        </summary>
         <value>
         </value>
         <remarks>
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="height">
-      <MemberSignature Language="C#" Value="public int height { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 height" />
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="height")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -172,20 +145,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="id">
-      <MemberSignature Language="C#" Value="public string id { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string id" />
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -198,20 +169,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="lease_expiry">
-      <MemberSignature Language="C#" Value="public long lease_expiry { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int64 lease_expiry" />
+    <Member MemberName="LeaseExpiry">
+      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 LeaseExpiry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lease_expiry")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -224,20 +193,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="length_in_seconds">
-      <MemberSignature Language="C#" Value="public int length_in_seconds { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 length_in_seconds" />
+    <Member MemberName="LengthInSeconds">
+      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LengthInSeconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="length_in_seconds")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -250,20 +217,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="mime_type">
-      <MemberSignature Language="C#" Value="public string mime_type { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string mime_type" />
+    <Member MemberName="MimeType">
+      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="mime_type")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -276,20 +241,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="proof_of_play_url">
-      <MemberSignature Language="C#" Value="public string proof_of_play_url { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string proof_of_play_url" />
+    <Member MemberName="ProofOfPlayUrl">
+      <MemberSignature Language="C#" Value="public string ProofOfPlayUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProofOfPlayUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="proof_of_play_url")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -307,14 +270,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendProofOfPlay() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -327,20 +283,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="width">
-      <MemberSignature Language="C#" Value="public int width { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 width" />
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="width")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

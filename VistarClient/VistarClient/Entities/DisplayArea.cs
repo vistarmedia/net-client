@@ -3,27 +3,26 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace VistarClient.Entities {
- [JsonObject(MemberSerialization.OptIn)]
   public class DisplayArea {
    [JsonProperty(PropertyName="id")]
-    public string id { get; set; }
+    public string Id { get; set; }
    
    [JsonProperty(PropertyName="width")]
-    public int width { get; set; }
+    public int Width { get; set; }
    
    [JsonProperty(PropertyName="height")]
-    public int height { get; set; }
+    public int Height { get; set; }
    
    [JsonProperty(PropertyName="supported_media")]
-    public List<string> supported_media { get; set; }
+    public List<string> SupportedMedia { get; set; }
    
    [JsonProperty(PropertyName="min_duration")]
-    public int? min_duration { get; set; }
+    public int? MinDuration { get; set; }
    
    [JsonProperty(PropertyName="max_duration")]
-    public int? max_duration { get; set; }
+    public int? MaxDuration { get; set; }
 
    [JsonProperty(PropertyName="allow_audio")]
-    public bool allow_audio{ get; set; }
+    public bool AllowAudio{ get; set; }
   }
 }

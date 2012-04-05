@@ -1,6 +1,6 @@
 <Namespace Name="VistarClient.Utils">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary></summary>
+    <remarks>Utility classes used by the core library.</remarks>
   </Docs>
 </Namespace>

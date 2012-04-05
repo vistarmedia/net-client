@@ -3,27 +3,16 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdRequest extends System.Object" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
-    <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptIn)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>This class contains all data which is required to submit an ad request.</summary>
-    <remarks>The data which is populated in the class will be used to create an advertisement.</remarks>
+    <summary>Contains information required to submit an ad request.</summary>
+    <remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,14 +20,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,19 +30,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="api_key">
-      <MemberSignature Language="C#" Value="public string api_key { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string api_key" />
+    <Member MemberName="ApiKey">
+      <MemberSignature Language="C#" Value="public string ApiKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApiKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -79,19 +54,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="device_attribute">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.DeviceAttribute&gt; device_attribute { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.DeviceAttribute&gt; device_attribute" />
+    <Member MemberName="DeviceAttributes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.DeviceAttribute&gt; DeviceAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.DeviceAttribute&gt; DeviceAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -110,19 +78,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="device_id">
-      <MemberSignature Language="C#" Value="public string device_id { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string device_id" />
+    <Member MemberName="DeviceId">
+      <MemberSignature Language="C#" Value="public string DeviceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -141,19 +102,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="direct_connection">
-      <MemberSignature Language="C#" Value="public bool direct_connection { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool direct_connection" />
+    <Member MemberName="DirectConnection">
+      <MemberSignature Language="C#" Value="public bool DirectConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DirectConnection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -172,19 +126,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="display_area">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.DisplayArea&gt; display_area { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.DisplayArea&gt; display_area" />
+    <Member MemberName="DisplayAreas">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.DisplayArea&gt; DisplayAreas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.DisplayArea&gt; DisplayAreas" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -203,19 +150,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="display_time">
-      <MemberSignature Language="C#" Value="public long display_time { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int64 display_time" />
+    <Member MemberName="DisplayTime">
+      <MemberSignature Language="C#" Value="public long DisplayTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 DisplayTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -234,19 +174,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetDisplayTime">
-      <MemberSignature Language="C#" Value="public DateTime GetDisplayTime ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetDisplayTime() cil managed" />
+    <Member MemberName="GetDisplayDateTime">
+      <MemberSignature Language="C#" Value="public DateTime GetDisplayDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetDisplayDateTime() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -261,19 +194,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="network_id">
-      <MemberSignature Language="C#" Value="public string network_id { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string network_id" />
+    <Member MemberName="NetworkId">
+      <MemberSignature Language="C#" Value="public string NetworkId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NetworkId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -292,19 +218,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="number_of_screens">
-      <MemberSignature Language="C#" Value="public int number_of_screens { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 number_of_screens" />
+    <Member MemberName="NumberOfScreens">
+      <MemberSignature Language="C#" Value="public int NumberOfScreens { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfScreens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -323,19 +242,12 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetDisplayTime">
-      <MemberSignature Language="C#" Value="public void SetDisplayTime (DateTime displayTime);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDisplayTime(valuetype System.DateTime displayTime) cil managed" />
+    <Member MemberName="SetDisplayDateTime">
+      <MemberSignature Language="C#" Value="public void SetDisplayDateTime (DateTime displayTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDisplayDateTime(valuetype System.DateTime displayTime) cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

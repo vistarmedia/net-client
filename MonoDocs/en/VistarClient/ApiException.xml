@@ -11,14 +11,15 @@
     <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
     <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
     <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-    </summary>
+    <summary>Encapsulates any exception thrown by the API.</summary>
     <remarks>
     </remarks>
   </Docs>
@@ -36,13 +37,14 @@
         <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message">
-        </param>
+        <param name="message">Exception message string.</param>
         <summary>
         </summary>
         <remarks>

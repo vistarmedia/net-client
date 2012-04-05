@@ -1,6 +1,6 @@
 <Namespace Name="VistarClient.Request">
   <Docs>
-    <summary>This namespace contains objects used for communication to the API.</summary>
-    <remarks></remarks>
+    <summary>.</summary>
+    <remarks>Classes that represent messages sent to and from the API.</remarks>
   </Docs>
 </Namespace>

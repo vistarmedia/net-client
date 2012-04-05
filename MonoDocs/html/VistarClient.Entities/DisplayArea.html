@@ -210,7 +210,7 @@
     </p>
     <div id="T:VistarClient.Entities.DisplayArea:Signature">
       <h2>Syntax</h2>
-      <div class="Signature">[Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.OptIn)]<br />public class  <b>DisplayArea</b></div>
+      <div class="Signature">public class  <b>DisplayArea</b></div>
     </div>
     <div class="Remarks" id="T:VistarClient.Entities.DisplayArea:Docs">
       <h2 class="Section">Remarks</h2>
@@ -218,7 +218,7 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:VistarClient.Entities.DisplayArea:Docs:Version Information">
-        <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
+        <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
@@ -257,13 +257,13 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:VistarClient.Entities.DisplayArea.allow_audio">allow_audio</a>
+                    <a href="#P:VistarClient.Entities.DisplayArea.AllowAudio">AllowAudio</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
-                  </i>. </td>
+                  </i>. Whether or not the display supports or should allow audio playback</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -272,13 +272,13 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:VistarClient.Entities.DisplayArea.height">height</a>
+                    <a href="#P:VistarClient.Entities.DisplayArea.Height">Height</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
-                  </i>. </td>
+                  </i>. Height of the display in pixels</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -287,7 +287,7 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:VistarClient.Entities.DisplayArea.id">id</a>
+                    <a href="#P:VistarClient.Entities.DisplayArea.Id">Id</a>
                   </b>
                 </td>
                 <td>
@@ -302,13 +302,13 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:VistarClient.Entities.DisplayArea.max_duration">max_duration</a>
+                    <a href="#P:VistarClient.Entities.DisplayArea.MaxDuration">MaxDuration</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;int&gt;</a>
-                  </i>. </td>
+                  </i>. The maximum duration of an ad in seconds for this display</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -317,13 +317,13 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:VistarClient.Entities.DisplayArea.min_duration">min_duration</a>
+                    <a href="#P:VistarClient.Entities.DisplayArea.MinDuration">MinDuration</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;int&gt;</a>
-                  </i>. </td>
+                  </i>. The minimum duration of an ad in seconds for this display</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -332,13 +332,13 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:VistarClient.Entities.DisplayArea.supported_media">supported_media</a>
+                    <a href="#P:VistarClient.Entities.DisplayArea.SupportedMedia">SupportedMedia</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;string&gt;</a>
-                  </i>. </td>
+                  </i>. List of supported MIME types for this display</td>
               </tr>
               <tr valign="top">
                 <td>
@@ -347,13 +347,13 @@
                 </td>
                 <td>
                   <b>
-                    <a href="#P:VistarClient.Entities.DisplayArea.width">width</a>
+                    <a href="#P:VistarClient.Entities.DisplayArea.Width">Width</a>
                   </b>
                 </td>
                 <td>
                   <i>
                     <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
-                  </i>. </td>
+                  </i>. Width of the display in pixels</td>
               </tr>
             </table>
           </div>
@@ -374,126 +374,120 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="C:VistarClient.Entities.DisplayArea:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:VistarClient.Entities.DisplayArea.allow_audio">allow_audio Property</h3>
-        <blockquote id="P:VistarClient.Entities.DisplayArea.allow_audio:member">
+        <h3 id="P:VistarClient.Entities.DisplayArea.AllowAudio">AllowAudio Property</h3>
+        <blockquote id="P:VistarClient.Entities.DisplayArea.AllowAudio:member">
+          <p class="Summary">Whether or not the display supports or should allow audio playback</p>
+          <h2>Syntax</h2>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="allow_audio")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>AllowAudio</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.AllowAudio:Value">
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.AllowAudio:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.AllowAudio:Version Information">
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:VistarClient.Entities.DisplayArea.Height">Height Property</h3>
+        <blockquote id="P:VistarClient.Entities.DisplayArea.Height:member">
+          <p class="Summary">Height of the display in pixels</p>
+          <h2>Syntax</h2>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="height")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Height</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.Height:Value">
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.Height:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.Height:Version Information">
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:VistarClient.Entities.DisplayArea.Id">Id Property</h3>
+        <blockquote id="P:VistarClient.Entities.DisplayArea.Id:member">
           <p class="Summary">
           </p>
           <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="allow_audio")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>allow_audio</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="id")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Id</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.allow_audio:Value">
+          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.Id:Value">
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.allow_audio:Remarks">
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.Id:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.allow_audio:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.Id:Version Information">
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:VistarClient.Entities.DisplayArea.height">height Property</h3>
-        <blockquote id="P:VistarClient.Entities.DisplayArea.height:member">
-          <p class="Summary">
-          </p>
+        <h3 id="P:VistarClient.Entities.DisplayArea.MaxDuration">MaxDuration Property</h3>
+        <blockquote id="P:VistarClient.Entities.DisplayArea.MaxDuration:member">
+          <p class="Summary">The maximum duration of an ad in seconds for this display</p>
           <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="height")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>height</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="max_duration")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;int&gt;</a> <b>MaxDuration</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.height:Value">
+          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.MaxDuration:Value">
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.height:Remarks">
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.MaxDuration:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.height:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.MaxDuration:Version Information">
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:VistarClient.Entities.DisplayArea.id">id Property</h3>
-        <blockquote id="P:VistarClient.Entities.DisplayArea.id:member">
-          <p class="Summary">
-          </p>
+        <h3 id="P:VistarClient.Entities.DisplayArea.MinDuration">MinDuration Property</h3>
+        <blockquote id="P:VistarClient.Entities.DisplayArea.MinDuration:member">
+          <p class="Summary">The minimum duration of an ad in seconds for this display</p>
           <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="id")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>id</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="min_duration")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;int&gt;</a> <b>MinDuration</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.id:Value">
+          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.MinDuration:Value">
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.id:Remarks">
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.MinDuration:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.id:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.MinDuration:Version Information">
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:VistarClient.Entities.DisplayArea.max_duration">max_duration Property</h3>
-        <blockquote id="P:VistarClient.Entities.DisplayArea.max_duration:member">
-          <p class="Summary">
-          </p>
+        <h3 id="P:VistarClient.Entities.DisplayArea.SupportedMedia">SupportedMedia Property</h3>
+        <blockquote id="P:VistarClient.Entities.DisplayArea.SupportedMedia:member">
+          <p class="Summary">List of supported MIME types for this display</p>
           <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="max_duration")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;int&gt;</a> <b>max_duration</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="supported_media")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;string&gt;</a> <b>SupportedMedia</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.max_duration:Value">
+          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.SupportedMedia:Value">
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.max_duration:Remarks">
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.SupportedMedia:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.max_duration:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.SupportedMedia:Version Information">
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:VistarClient.Entities.DisplayArea.min_duration">min_duration Property</h3>
-        <blockquote id="P:VistarClient.Entities.DisplayArea.min_duration:member">
-          <p class="Summary">
-          </p>
+        <h3 id="P:VistarClient.Entities.DisplayArea.Width">Width Property</h3>
+        <blockquote id="P:VistarClient.Entities.DisplayArea.Width:member">
+          <p class="Summary">Width of the display in pixels</p>
           <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="min_duration")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;int&gt;</a> <b>min_duration</b>  { get; set; }</div>
+          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="width")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Width</b>  { get; set; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.min_duration:Value">
+          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.Width:Value">
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.min_duration:Remarks">
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.Width:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.min_duration:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:VistarClient.Entities.DisplayArea.supported_media">supported_media Property</h3>
-        <blockquote id="P:VistarClient.Entities.DisplayArea.supported_media:member">
-          <p class="Summary">
-          </p>
-          <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="supported_media")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;string&gt;</a> <b>supported_media</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.supported_media:Value">
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.supported_media:Remarks">
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.supported_media:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:VistarClient.Entities.DisplayArea.width">width Property</h3>
-        <blockquote id="P:VistarClient.Entities.DisplayArea.width:member">
-          <p class="Summary">
-          </p>
-          <h2>Syntax</h2>
-          <div class="Signature">[Newtonsoft.Json.JsonProperty(PropertyName="width")]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>width</b>  { get; set; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:VistarClient.Entities.DisplayArea.width:Value">
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.width:Remarks">
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.width:Version Information">
-            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.18189, 1.0.4477.27347, 1.0.4477.28737, 1.0.4477.28766, 1.0.4477.28779, 1.0.4477.29094, 1.0.4477.31328, 1.0.4477.31700</div>
+          <div class="SectionBox" id="P:VistarClient.Entities.DisplayArea.Width:Version Information">
+            <b>Namespace: </b>VistarClient.Entities<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4478.17832</div>
           <hr size="1" />
         </blockquote>
       </div>

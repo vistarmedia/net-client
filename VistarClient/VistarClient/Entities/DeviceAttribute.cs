@@ -1,10 +1,13 @@
 using System;
+using Newtonsoft.Json;
 
 namespace VistarClient.Entities {
   public class DeviceAttribute {
-    public string name { get; set; }
+    [JsonProperty(PropertyName="name")]
+    public string Name { get; set; }
 
-    public string @value { get; set; }
+    [JsonProperty(PropertyName="value")]
+    public string Value { get; set; }
   }
 }
 

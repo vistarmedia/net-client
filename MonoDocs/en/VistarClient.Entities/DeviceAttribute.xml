@@ -3,14 +3,7 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceAttribute extends System.Object" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
-    <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-    <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,14 +21,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,20 +31,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="name">
-      <MemberSignature Language="C#" Value="public string name { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string name" />
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -71,20 +55,18 @@
         </remarks>
       </Docs>
     </Member>
-    <Member MemberName="value">
-      <MemberSignature Language="C#" Value="public string value { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string value" />
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.18189</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

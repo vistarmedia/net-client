@@ -11,14 +11,15 @@
     <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
     <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
     <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+    <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>VistarClient.ApiException</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>
-    </summary>
+    <summary>An exception thrown when a Proof of Play has already been sent or invalid data is sent.</summary>
     <remarks>
     </remarks>
   </Docs>
@@ -36,6 +37,8 @@
         <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
         <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
+        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>

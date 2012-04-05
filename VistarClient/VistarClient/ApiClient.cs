@@ -1,7 +1,8 @@
 using System;
+using System.Linq;
+using RestSharp;
 using VistarClient.Entities;
 using VistarClient.Request;
-using RestSharp;
 
 namespace VistarClient {
   public class ApiClient {
@@ -25,7 +26,7 @@ namespace VistarClient {
       restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
      
       try {
-        return restClient.Execute<AdvertisementResponse>(restRequest).Data.advertisement[0];
+        return restClient.Execute<AdvertisementResponse>(restRequest).Data.Advertisements.First();
       }
       catch(Exception ex) {
         throw new ApiException(ex.Message);  
