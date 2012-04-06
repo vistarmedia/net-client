@@ -2,6 +2,7 @@ TestConsole
 bin
 obj
 *.userprefs
+*.pidb
 test-results
 run_test.sh
 TestResults.xml

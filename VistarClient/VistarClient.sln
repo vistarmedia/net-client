@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistarClient", "VistarClient\VistarClient.csproj", "{FFFD37AC-554E-4269-8C44-E78281DAFCF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{2761CB3D-899A-4894-AA23-2C7FC04FF780}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistarClient.Tests", "VistarClient.Tests\VistarClient.Tests.csproj", "{BF550905-3C8A-417B-90BE-ED89118487B7}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2761CB3D-899A-4894-AA23-2C7FC04FF780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2761CB3D-899A-4894-AA23-2C7FC04FF780}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2761CB3D-899A-4894-AA23-2C7FC04FF780}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2761CB3D-899A-4894-AA23-2C7FC04FF780}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF550905-3C8A-417B-90BE-ED89118487B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF550905-3C8A-417B-90BE-ED89118487B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF550905-3C8A-417B-90BE-ED89118487B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +21,6 @@ Global
 		{FFFD37AC-554E-4269-8C44-E78281DAFCF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = TestConsole\TestConsole.csproj
+		StartupItem = VistarClient\VistarClient.csproj
 	EndGlobalSection
 EndGlobal
