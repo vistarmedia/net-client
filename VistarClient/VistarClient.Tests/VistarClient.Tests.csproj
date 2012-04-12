@@ -53,16 +53,21 @@
       <HintPath>..\lib\Castle.DynamicProxy2.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="ApiClientTest.cs" />
-    <Compile Include="AdvertisementTest.cs" />
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\VistarClient\VistarClient.csproj">
       <Project>{FFFD37AC-554E-4269-8C44-E78281DAFCF4}</Project>
       <Name>VistarClient</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+    <Folder Include="Request\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiClientTest.cs" />
+    <Compile Include="Entities\AdvertisementTest.cs" />
+    <Compile Include="Utils\DateTimeExtensionsTest.cs" />
   </ItemGroup>
 </Project>

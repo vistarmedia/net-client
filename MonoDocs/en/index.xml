@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="VistarClient" Version="1.0.4478.17832">
+    <Assembly Name="VistarClient" Version="1.0.4485.18360">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>
@@ -49,6 +49,7 @@
       <Type Name="AdvertisementResponse" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Utils">
+      <Type Name="DateTimeExtensions" Kind="Class" />
       <Type Name="IVistarWebRequest" Kind="Interface" />
       <Type Name="IVistarWebRequestFactory" Kind="Interface" />
       <Type Name="VistarWebException" Kind="Class" />
@@ -57,4 +58,71 @@
     </Namespace>
   </Types>
   <Title>VistarClient</Title>
+  <ExtensionMethods>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.DateTime" />
+      </Targets>
+      <Member MemberName="GetLocalFromUtcUnixTime">
+        <MemberSignature Language="C#" Value="public static DateTime GetLocalFromUtcUnixTime (this DateTime dateTime, long unixTime);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetLocalFromUtcUnixTime(valuetype System.DateTime dateTime, int64 unixTime) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.DateTime</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="dateTime" Type="System.DateTime" RefType="this" />
+          <Parameter Name="unixTime" Type="System.Int64" />
+        </Parameters>
+        <Docs>
+          <param name="dateTime" />
+          <param name="unixTime">Unix time to be converted.</param>
+          <summary>Converts a UTC Unix epoch time to a DateTime object.</summary>
+        </Docs>
+        <Link Type="VistarClient.Utils.DateTimeExtensions" Member="M:VistarClient.Utils.DateTimeExtensions.GetLocalFromUtcUnixTime(System.DateTime,System.Int64)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.DateTime" />
+      </Targets>
+      <Member MemberName="StripSeconds">
+        <MemberSignature Language="C#" Value="public static DateTime StripSeconds (this DateTime dateTime);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime StripSeconds(valuetype System.DateTime dateTime) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.DateTime</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="dateTime" Type="System.DateTime" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="dateTime" />
+          <summary>Removes the seconds from a DateTime.</summary>
+        </Docs>
+        <Link Type="VistarClient.Utils.DateTimeExtensions" Member="M:VistarClient.Utils.DateTimeExtensions.StripSeconds(System.DateTime)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.DateTime" />
+      </Targets>
+      <Member MemberName="ToUtcUnixTime">
+        <MemberSignature Language="C#" Value="public static long ToUtcUnixTime (this DateTime dateTime);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ToUtcUnixTime(valuetype System.DateTime dateTime) cil managed" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Int64</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="dateTime" Type="System.DateTime" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="dateTime" />
+          <summary>Converts a DateTime object to a UTC Unix epoch timestamp.</summary>
+        </Docs>
+        <Link Type="VistarClient.Utils.DateTimeExtensions" Member="M:VistarClient.Utils.DateTimeExtensions.ToUtcUnixTime(System.DateTime)" />
+      </Member>
+    </ExtensionMethod>
+  </ExtensionMethods>
 </Overview>

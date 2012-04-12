@@ -1,15 +1,14 @@
-using System;
 using System.Net;
 using NUnit.Framework;
 using Rhino.Mocks;
 using VistarClient.Entities;
 using VistarClient.Utils;
 
-namespace VistarClient.Tests {
+namespace VistarClient.Tests.Entities {
  [TestFixture]
   public class AdvertisementTest {
    
-   [Test]
+    [Test]
     public void SendProofOfPlay() {
       var mockery = new MockRepository();
 
@@ -31,7 +30,7 @@ namespace VistarClient.Tests {
       }
     }
    
-   [Test]
+    [Test]
     public void SendProofOfPlay_Throws_InvalidLeaseException_When_BadRequest() {
       var mockery = new MockRepository();
 
@@ -56,7 +55,7 @@ namespace VistarClient.Tests {
       }
     }
    
-   [Test]
+    [Test]
     public void SendProofOfPlay_Throws_ApiException_When_Error_NotBadRequest() {
       var mockery = new MockRepository();
 

@@ -1,0 +1,86 @@
+<Type Name="DateTimeExtensions" FullName="VistarClient.Utils.DateTimeExtensions">
+  <TypeSignature Language="C#" Value="public static class DateTimeExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DateTimeExtensions extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>VistarClient</AssemblyName>
+    <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A collection of DateTime extensions to convert to and from Unix time.</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetLocalFromUtcUnixTime">
+      <MemberSignature Language="C#" Value="public static DateTime GetLocalFromUtcUnixTime (this DateTime dateTime, long unixTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime GetLocalFromUtcUnixTime(valuetype System.DateTime dateTime, int64 unixTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" RefType="this" />
+        <Parameter Name="unixTime" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">
+        </param>
+        <param name="unixTime">Unix time to be converted.</param>
+        <summary>Converts a UTC Unix epoch time to a DateTime object.</summary>
+        <returns>DateTime object</returns>
+        <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StripSeconds">
+      <MemberSignature Language="C#" Value="public static DateTime StripSeconds (this DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime StripSeconds(valuetype System.DateTime dateTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">
+        </param>
+        <summary>Removes the seconds from a DateTime.</summary>
+        <returns>DateTime object with seconds stripped</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUtcUnixTime">
+      <MemberSignature Language="C#" Value="public static long ToUtcUnixTime (this DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 ToUtcUnixTime(valuetype System.DateTime dateTime) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">
+        </param>
+        <summary>Converts a DateTime object to a UTC Unix epoch timestamp.</summary>
+        <returns>UTC Unix epoch time value</returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

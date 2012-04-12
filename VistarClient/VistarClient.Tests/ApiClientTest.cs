@@ -7,11 +7,11 @@ using Rhino.Mocks;
 using VistarClient.Entities;
 using VistarClient.Request;
 
-namespace VistarClient.Tests {
+namespace VistarClient.Tests.Request {
  [TestFixture]
   public class ApiClientTest {
 
-   [Test]
+    [Test]
     public void SubmitAdRequest_Success() {
       var mockery = new MockRepository();
       var restClient = mockery.StrictMock<IRestClient>();
@@ -41,7 +41,7 @@ namespace VistarClient.Tests {
       }
     }
    
-   [Test]
+    [Test]
     public void SubmitAdRequest_Throws_ApiException_When_Error() {
       var mockery = new MockRepository();
       var restClient = mockery.StrictMock<IRestClient>();
@@ -54,7 +54,7 @@ namespace VistarClient.Tests {
         SetupResult.For(restRequest.JsonSerializer).Return(serializer);
         Expect.Call(restClient.Execute<AdvertisementResponse>(restRequest)).Throw(new Exception(error));
       }
-     
+
       using(mockery.Playback()) {
         var ex = Assert.Throws(typeof(ApiException), () => {
           new ApiClient(restClient, restRequest).SubmitAdRequest(new AdRequest());
