@@ -6,6 +6,6 @@ using VistarClient.Entities;
 namespace VistarClient.Request {
   public class AdvertisementResponse {
     [JsonProperty(PropertyName="advertisement")]
-    public List<Advertisement> Advertisements { get; set; }
+    public List<Advertisement> advertisement { get; set; }
   }
 }

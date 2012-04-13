@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="VistarClient" Version="1.0.4485.18360">
+    <Assembly Name="VistarClient" Version="1.0.4489.22141">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>
@@ -35,8 +35,11 @@
   </Copyright>
   <Types>
     <Namespace Name="VistarClient">
+      <Type Name="AdRequestor" Kind="Class" />
       <Type Name="ApiClient" Kind="Class" />
+      <Type Name="ApiClientAsync" Kind="Class" />
       <Type Name="ApiException" Kind="Class" />
+      <Type Name="IAdRequestor" Kind="Interface" />
       <Type Name="InvalidLeaseException" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Entities">
@@ -50,8 +53,10 @@
     </Namespace>
     <Namespace Name="VistarClient.Utils">
       <Type Name="DateTimeExtensions" Kind="Class" />
+      <Type Name="IVistarTaskFactory" Kind="Interface" />
       <Type Name="IVistarWebRequest" Kind="Interface" />
       <Type Name="IVistarWebRequestFactory" Kind="Interface" />
+      <Type Name="VistarTaskFactory" Kind="Class" />
       <Type Name="VistarWebException" Kind="Class" />
       <Type Name="VistarWebRequest" Kind="Class" />
       <Type Name="VistarWebRequestFactory" Kind="Class" />

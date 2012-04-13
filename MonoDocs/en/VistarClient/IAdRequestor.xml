@@ -1,0 +1,39 @@
+<Type Name="IAdRequestor" FullName="VistarClient.IAdRequestor">
+  <TypeSignature Language="C#" Value="public interface IAdRequestor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAdRequestor" />
+  <AssemblyInfo>
+    <AssemblyName>VistarClient</AssemblyName>
+    <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the interface for running an ad request</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RunSubmitAdRequest">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt; RunSubmitAdRequest (VistarClient.Request.AdRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt; RunSubmitAdRequest(class VistarClient.Request.AdRequest request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="VistarClient.Request.AdRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>Submit a request to the ad server</summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

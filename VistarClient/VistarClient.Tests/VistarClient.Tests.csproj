@@ -69,6 +69,8 @@
     <Compile Include="ApiClientTest.cs" />
     <Compile Include="Entities\AdvertisementTest.cs" />
     <Compile Include="Utils\DateTimeExtensionsTest.cs" />
+    <Compile Include="ApiClientAsyncTest.cs" />
+    <Compile Include="AdRequestorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

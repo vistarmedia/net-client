@@ -4,6 +4,9 @@
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,6 +24,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -35,7 +41,8 @@
         <param name="unixTime">Unix time to be converted.</param>
         <summary>Converts a UTC Unix epoch time to a DateTime object.</summary>
         <returns>DateTime object</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StripSeconds">
@@ -44,6 +51,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -66,6 +76,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>

@@ -5,6 +5,9 @@
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
     <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,6 +27,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,6 +46,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="requestFactory" Type="VistarClient.Utils.IVistarWebRequestFactory" />
@@ -59,6 +68,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -84,6 +96,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -109,6 +124,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -134,6 +152,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,6 +180,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -184,6 +208,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -209,6 +236,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -234,6 +264,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -259,6 +292,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -284,6 +320,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -303,6 +342,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

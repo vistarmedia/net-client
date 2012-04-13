@@ -1,0 +1,48 @@
+<Type Name="IVistarTaskFactory" FullName="VistarClient.Utils.IVistarTaskFactory">
+  <TypeSignature Language="C#" Value="public interface IVistarTaskFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVistarTaskFactory" />
+  <AssemblyInfo>
+    <AssemblyName>VistarClient</AssemblyName>
+    <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+    </summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StartNew">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt; StartNew (Func&lt;VistarClient.Request.AdRequest,System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt; method, VistarClient.Request.AdRequest adRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt;&gt; StartNew(class System.Func`2&lt;class VistarClient.Request.AdRequest, class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt;&gt; method, class VistarClient.Request.AdRequest adRequest) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Func&lt;VistarClient.Request.AdRequest,System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;" />
+        <Parameter Name="adRequest" Type="VistarClient.Request.AdRequest" />
+      </Parameters>
+      <Docs>
+        <param name="method">
+        </param>
+        <param name="adRequest">
+        </param>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

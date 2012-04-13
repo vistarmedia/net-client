@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>VistarClient.Utils.VistarWebRequest</title>
+    <title>VistarClient.IAdRequestor</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
       a { text-decoration: none }
@@ -187,43 +187,39 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">VistarClient</a> : <a href="index.html">VistarClient.Utils Namespace</a></div>
+      <a href="../index.html">VistarClient</a> : <a href="index.html">VistarClient Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:VistarClient.Utils.VistarWebRequest">Overview</a>
+        <a href="#T:VistarClient.IAdRequestor">Overview</a>
       </p>
       <p>
-        <a href="#T:VistarClient.Utils.VistarWebRequest:Signature">Signature</a>
+        <a href="#T:VistarClient.IAdRequestor:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:VistarClient.Utils.VistarWebRequest:Docs">Remarks</a>
+        <a href="#T:VistarClient.IAdRequestor:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:VistarClient.Utils.VistarWebRequest:Members">Member Details</a>
+        <a href="#T:VistarClient.IAdRequestor:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:VistarClient.Utils.VistarWebRequest">VistarWebRequest  Class</h1>
-    <p class="Summary" id="T:VistarClient.Utils.VistarWebRequest:Summary">Wrapper for HttpWebRequest</p>
-    <div id="T:VistarClient.Utils.VistarWebRequest:Signature">
+    <h1 class="PageTitle" id="T:VistarClient.IAdRequestor">IAdRequestor  Interface</h1>
+    <p class="Summary" id="T:VistarClient.IAdRequestor:Summary">Defines the interface for running an ad request</p>
+    <div id="T:VistarClient.IAdRequestor:Signature">
       <h2>Syntax</h2>
-      <div class="Signature">public class  <b>VistarWebRequest</b> : <a href="../VistarClient.Utils/IVistarWebRequest.html">IVistarWebRequest</a></div>
+      <div class="Signature">public interface  <b>IAdRequestor</b></div>
     </div>
-    <div class="Remarks" id="T:VistarClient.Utils.VistarWebRequest:Docs">
+    <div class="Remarks" id="T:VistarClient.IAdRequestor:Docs">
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:VistarClient.Utils.VistarWebRequest:Docs:Remarks">
+      <div class="SectionBox" id="T:VistarClient.IAdRequestor:Docs:Remarks">
       </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:VistarClient.Utils.VistarWebRequest:Docs:Version Information">
-        <b>Namespace: </b>VistarClient.Utils<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.31700, 1.0.4478.17182, 1.0.4478.17832, 1.0.4485.18360, 1.0.4489.17318, 1.0.4489.18553, 1.0.4489.22141</div>
+      <div class="SectionBox" id="T:VistarClient.IAdRequestor:Docs:Version Information">
+        <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4489.22141</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
-        <p>
-								See Also: Inherited members from
-								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
-							</p>
         <h2 class="Section">Public Methods</h2>
         <div class="SectionBox" id="Public Methods">
           <div class="SubsectionBox">
@@ -235,32 +231,41 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:VistarClient.Utils.VistarWebRequest.GetResponse">GetResponse</a>
-                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.WebResponse">System.Net.WebResponse</a></nobr><blockquote></blockquote></td>
+                    <a href="#M:VistarClient.IAdRequestor.RunSubmitAdRequest(VistarClient.Request.AdRequest)">RunSubmitAdRequest</a>
+                  </b>(<a href="../VistarClient.Request/AdRequest.html">VistarClient.Request.AdRequest</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;VistarClient.Entities.Advertisement&gt;</a></nobr><blockquote>Submit a request to the ad server</blockquote></td>
               </tr>
             </table>
           </div>
         </div>
       </div>
     </div>
-    <div class="Members" id="T:VistarClient.Utils.VistarWebRequest:Members">
+    <div class="Members" id="T:VistarClient.IAdRequestor:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="M:VistarClient.Utils.VistarWebRequest.GetResponse">GetResponse Method</h3>
-        <blockquote id="M:VistarClient.Utils.VistarWebRequest.GetResponse:member">
-          <p class="Summary">
-          </p>
+        <h3 id="M:VistarClient.IAdRequestor.RunSubmitAdRequest(VistarClient.Request.AdRequest)">RunSubmitAdRequest Method</h3>
+        <blockquote id="M:VistarClient.IAdRequestor.RunSubmitAdRequest(VistarClient.Request.AdRequest):member">
+          <p class="Summary">Submit a request to the ad server</p>
           <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Net.WebResponse">System.Net.WebResponse</a> <b>GetResponse</b> ()</div>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;VistarClient.Entities.Advertisement&gt;</a> <b>RunSubmitAdRequest</b> (<a href="../VistarClient.Request/AdRequest.html">VistarClient.Request.AdRequest</a> request)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:VistarClient.IAdRequestor.RunSubmitAdRequest(VistarClient.Request.AdRequest):Parameters">
+            <dl>
+              <dt>
+                <i>request</i>
+              </dt>
+              <dd>
+              </dd>
+            </dl>
+          </blockquote>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:VistarClient.Utils.VistarWebRequest.GetResponse:Returns">
+          <blockquote class="SubsectionBox" id="M:VistarClient.IAdRequestor.RunSubmitAdRequest(VistarClient.Request.AdRequest):Returns">
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:VistarClient.Utils.VistarWebRequest.GetResponse:Remarks">
+          <div class="SectionBox" id="M:VistarClient.IAdRequestor.RunSubmitAdRequest(VistarClient.Request.AdRequest):Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:VistarClient.Utils.VistarWebRequest.GetResponse:Version Information">
-            <b>Namespace: </b>VistarClient.Utils<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4477.31700, 1.0.4478.17182, 1.0.4478.17832, 1.0.4485.18360, 1.0.4489.17318, 1.0.4489.18553, 1.0.4489.22141</div>
+          <div class="SectionBox" id="M:VistarClient.IAdRequestor.RunSubmitAdRequest(VistarClient.Request.AdRequest):Version Information">
+            <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4489.22141</div>
           <hr size="1" />
         </blockquote>
       </div>

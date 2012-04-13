@@ -56,6 +56,9 @@
     <Compile Include="Utils\VistarWebRequest.cs" />
     <Compile Include="Utils\VistarWebException.cs" />
     <Compile Include="Utils\DateTimeExtensions.cs" />
+    <Compile Include="Utils\VistarTaskFactory.cs" />
+    <Compile Include="AdRequestor.cs" />
+    <Compile Include="ApiClientAsync.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -1,0 +1,85 @@
+<Type Name="AdRequestor" FullName="VistarClient.AdRequestor">
+  <TypeSignature Language="C#" Value="public sealed class AdRequestor : VistarClient.IAdRequestor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AdRequestor extends System.Object implements class VistarClient.IAdRequestor" />
+  <AssemblyInfo>
+    <AssemblyName>VistarClient</AssemblyName>
+    <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>VistarClient.IAdRequestor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains method for submitting the ad request</summary>
+    <remarks>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdRequestor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Default constructor</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdRequestor (RestSharp.IRestClient restClient, RestSharp.IRestRequest restRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class RestSharp.IRestClient restClient, class RestSharp.IRestRequest restRequest) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="restClient" Type="RestSharp.IRestClient" />
+        <Parameter Name="restRequest" Type="RestSharp.IRestRequest" />
+      </Parameters>
+      <Docs>
+        <param name="restClient">Used for testing purposes only</param>
+        <param name="restRequest">Used for testing purposes only</param>
+        <summary>Used for testing purposes only</summary>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunSubmitAdRequest">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt; RunSubmitAdRequest (VistarClient.Request.AdRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt; RunSubmitAdRequest(class VistarClient.Request.AdRequest request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="VistarClient.Request.AdRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">
+        </param>
+        <summary>
+        </summary>
+        <returns>
+        </returns>
+        <remarks>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

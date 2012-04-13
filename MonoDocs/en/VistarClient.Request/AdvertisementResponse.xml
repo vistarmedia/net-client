@@ -5,6 +5,9 @@
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
     <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+    <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,6 +26,9 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
         <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -30,6 +36,29 @@
         </summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="advertisement">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt; advertisement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt; advertisement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
+        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="advertisement")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Advertisements">

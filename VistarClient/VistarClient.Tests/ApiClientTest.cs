@@ -6,6 +6,7 @@ using RestSharp.Serializers;
 using Rhino.Mocks;
 using VistarClient.Entities;
 using VistarClient.Request;
+using VistarClient.Utils;
 
 namespace VistarClient.Tests.Request {
  [TestFixture]
@@ -14,53 +15,21 @@ namespace VistarClient.Tests.Request {
     [Test]
     public void SubmitAdRequest_Success() {
       var mockery = new MockRepository();
-      var restClient = mockery.StrictMock<IRestClient>();
-      var restRequest = mockery.StrictMock<IRestRequest>();
-      var serializer = mockery.StrictMock<ISerializer>();
+      var adRequestor = mockery.StrictMock<IAdRequestor>();
      
       var adRequest = new AdRequest();
-      var str = "serialized data";
      
       var ad = new Advertisement();
-      var advertisementResponse = new AdvertisementResponse{Advertisements = new List<Advertisement>{ad}};
-      var restResponse = new RestResponse<AdvertisementResponse>();
-      restResponse.Data = advertisementResponse;
+      var ads = new List<Advertisement> { ad };
      
       using(mockery.Record()) {
-        restRequest.RequestFormat = DataFormat.Json;
-        Expect.Call(restRequest.JsonSerializer).Return(serializer);
-        Expect.Call(serializer.Serialize(adRequest)).Return(str);
-        Expect.Call(restRequest.AddParameter("text/json", str, ParameterType.RequestBody)).Return(new RestRequest());
-        Expect.Call(restClient.Execute<AdvertisementResponse>(restRequest)).Return(restResponse);
+        Expect.Call(adRequestor.RunSubmitAdRequest(adRequest)).Return(ads);
       }
      
       using(mockery.Playback()) {
-        var client = new ApiClient(restClient, restRequest);
+        var client = new ApiClient(adRequestor);
         var rtn = client.SubmitAdRequest(adRequest);
-        Assert.AreSame(ad, rtn);
-      }
-    }
-   
-    [Test]
-    public void SubmitAdRequest_Throws_ApiException_When_Error() {
-      var mockery = new MockRepository();
-      var restClient = mockery.StrictMock<IRestClient>();
-      var restRequest = mockery.DynamicMock<IRestRequest>();
-      var serializer = mockery.Stub<ISerializer>();
-     
-      var error = "Test error message";
-     
-      using(mockery.Record()) {
-        SetupResult.For(restRequest.JsonSerializer).Return(serializer);
-        Expect.Call(restClient.Execute<AdvertisementResponse>(restRequest)).Throw(new Exception(error));
-      }
-
-      using(mockery.Playback()) {
-        var ex = Assert.Throws(typeof(ApiException), () => {
-          new ApiClient(restClient, restRequest).SubmitAdRequest(new AdRequest());
-        });
-       
-        Assert.AreEqual(error, ex.Message);
+        Assert.AreEqual(ad, rtn);
       }
     }
   }
