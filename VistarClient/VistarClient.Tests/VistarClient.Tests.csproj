@@ -70,4 +70,7 @@
     <Compile Include="Entities\AdvertisementTest.cs" />
     <Compile Include="Utils\DateTimeExtensionsTest.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
 </Project>
