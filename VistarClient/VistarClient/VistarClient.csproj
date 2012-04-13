@@ -65,5 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="VistarClient.dll.config" />
+    <None Include="license.txt" />
   </ItemGroup>
 </Project>
