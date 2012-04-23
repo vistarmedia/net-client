@@ -1,20 +1,33 @@
 using System;
 using System.Collections.Generic;
+using VistarClient.Request;
 
 namespace VistarClient.Entities {
   public class DisplayArea {
-    public string id { get; set; }
-   
-    public int width { get; set; }
-   
-    public int height { get; set; }
-   
-    public List<string> supported_media { get; set; }
-   
-    public int? min_duration { get; set; }
-   
-    public int? max_duration { get; set; }
+    public string Id { get; set; }
 
-    public bool allow_audio{ get; set; }
+    public int Width { get; set; }
+
+    public int Height { get; set; }
+
+    public List<string> SupportedMedia { get; set; }
+
+    public int? MinDuration { get; set; }
+
+    public int? MaxDuration { get; set; }
+
+    public bool AllowAudio { get; set; }
+
+    internal DisplayAreaMessage ToMessage() {
+      return new DisplayAreaMessage {
+        id = Id,
+        width = Width,
+        height = Height,
+        supported_media = SupportedMedia,
+        min_duration = MinDuration,
+        max_duration = MaxDuration,
+        allow_audio = AllowAudio
+      };
+    }
   }
 }

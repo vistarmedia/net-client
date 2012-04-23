@@ -5,7 +5,7 @@ namespace VistarClient.Utils {
   public interface IVistarWebRequestFactory {
     IVistarWebRequest Create(string url);
   }
- 
+
   public class VistarWebRequestFactory : IVistarWebRequestFactory {
     internal VistarWebRequestFactory() {
     }

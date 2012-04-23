@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -40,14 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Entities\AdRequest.cs" />
     <Compile Include="Entities\DisplayArea.cs" />
     <Compile Include="Entities\DeviceAttribute.cs" />
     <Compile Include="Entities\Advertisement.cs" />
-    <Compile Include="Request\AdvertisementResponse.cs" />
-    <Compile Include="Request\AdRequest.cs" />
+    <Compile Include="Request\AdvertisementMessage.cs" />
+    <Compile Include="Request\AdvertisementResponseMessage.cs" />
+    <Compile Include="Request\AdRequestMessage.cs" />
     <Compile Include="ApiClient.cs" />
     <Compile Include="InvalidLeaseException.cs" />
     <Compile Include="ApiException.cs" />
+    <Compile Include="Request\DeviceAttributeMessage.cs" />
+    <Compile Include="Request\DisplayAreaMessage.cs" />
     <Compile Include="Utils\VistarWebRequestFactory.cs" />
     <Compile Include="Utils\VistarWebRequest.cs" />
     <Compile Include="Utils\VistarWebException.cs" />
@@ -57,11 +61,7 @@
     <Compile Include="ApiClientAsync.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Request\" />
-    <Folder Include="Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="VistarClient.dll.config" />
     <None Include="license.txt" />

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using NUnit.Framework;
 using Rhino.Mocks;
 using RestSharp;
@@ -21,23 +22,23 @@ namespace VistarClient.Tests {
 
       var adRequest = new AdRequest();
 
-      var ad = new Advertisement();
-      var ads = new List<Advertisement> { ad };
-      var advertisementResponse = new AdvertisementResponse{advertisement = ads};
-      var restResponse = new RestResponse<AdvertisementResponse>();
+      var ad = new AdvertisementMessage { id = "test" };
+      var ads = new List<AdvertisementMessage> { ad };
+      var advertisementResponse = new AdvertisementResponseMessage { advertisement = ads };
+      var restResponse = new RestResponse<AdvertisementResponseMessage>();
       restResponse.Data = advertisementResponse;
-     
-      using(mockery.Record()) {
+
+      using (mockery.Record()) {
         restRequest.RequestFormat = DataFormat.Json;
         Expect.Call(restRequest.JsonSerializer).Return(serializer);
         Expect.Call(serializer.Serialize(adRequest)).Return(str);
         Expect.Call(restRequest.AddParameter("text/json", str, ParameterType.RequestBody)).Return(new RestRequest());
-        Expect.Call(restClient.Execute<AdvertisementResponse>(restRequest)).Return(restResponse);
+        Expect.Call(restClient.Execute<AdvertisementResponseMessage>(restRequest)).Return(restResponse);
       }
-     
-      using(mockery.Playback()) {
-        var result = new AdRequestor(restClient, restRequest).RunSubmitAdRequest(adRequest);
-        Assert.AreEqual(ads, result);
+
+      using (mockery.Playback()) {
+        var results = new AdRequestor(restClient, restRequest).RunSubmitAdRequest(adRequest);
+        Assert.AreEqual(ad.id, results[0].Id);
       }
     }
 
@@ -53,15 +54,15 @@ namespace VistarClient.Tests {
       var error = "Test error message";
       var adRequest = new AdRequest();
 
-      using(mockery.Record()) {
+      using (mockery.Record()) {
         restRequest.RequestFormat = DataFormat.Json;
         Expect.Call(restRequest.JsonSerializer).Return(serializer);
         Expect.Call(serializer.Serialize(adRequest)).Return(str);
         Expect.Call(restRequest.AddParameter("text/json", str, ParameterType.RequestBody)).Return(new RestRequest());
-        Expect.Call(restClient.Execute<AdvertisementResponse>(restRequest)).Throw(new Exception(error));
+        Expect.Call(restClient.Execute<AdvertisementResponseMessage>(restRequest)).Throw(new Exception(error));
       }
 
-      using(mockery.Playback()) {
+      using (mockery.Playback()) {
         var ex = Assert.Throws(typeof(ApiException), () => {
           new AdRequestor(restClient, restRequest).RunSubmitAdRequest(adRequest);
         });

@@ -9,7 +9,8 @@ namespace VistarClient {
     readonly IAdRequestor adRequestor;
     readonly IVistarTaskFactory taskFactory;
 
-    public ApiClientAsync() : this(new AdRequestor(), new VistarTaskFactory()) {
+    public ApiClientAsync()
+      : this(new AdRequestor(), new VistarTaskFactory()) {
 
     }
 
@@ -21,7 +22,7 @@ namespace VistarClient {
     public List<Task<List<Advertisement>>> SubmitAdRequestsAsync(List<AdRequest> requests) {
       var tasks = new List<Task<List<Advertisement>>>();
 
-      foreach(var request in requests) {
+      foreach (var request in requests) {
         var task = taskFactory.StartNew(adRequestor.RunSubmitAdRequest, request);
         tasks.Add(task);
       }

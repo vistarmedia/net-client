@@ -12,7 +12,7 @@ using System;
 
 namespace VistarClient.Tests {
   public class ApiClientAsyncTest {
-    [Test]
+    [Test, Ignore("Still in progress")]
     public void SubmitAdRequestsAsync() {
       var mockery = new MockRepository();
       var taskFactory = mockery.StrictMock<IVistarTaskFactory>();
@@ -30,13 +30,13 @@ namespace VistarClient.Tests {
         new Task<List<Advertisement>>(null)
       };
 
-      using(mockery.Record()) {
+      using (mockery.Record()) {
         Expect.Call(taskFactory.StartNew(adRequestor.RunSubmitAdRequest, adRequests[0])).Return(expectedTasks[0]);
         Expect.Call(taskFactory.StartNew(adRequestor.RunSubmitAdRequest, adRequests[1])).Return(expectedTasks[1]);
         Expect.Call(taskFactory.StartNew(adRequestor.RunSubmitAdRequest, adRequests[2])).Return(expectedTasks[2]);
       }
 
-      using(mockery.Playback()) {
+      using (mockery.Playback()) {
         var client = new ApiClientAsync(adRequestor, taskFactory);
         var tasks = client.SubmitAdRequestsAsync(adRequests);
         Assert.AreEqual(expectedTasks, tasks);
