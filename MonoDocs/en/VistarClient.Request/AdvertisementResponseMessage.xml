@@ -54,9 +54,12 @@
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Request.AdvertisementMessage&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+        </summary>
+        <value>
+        </value>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

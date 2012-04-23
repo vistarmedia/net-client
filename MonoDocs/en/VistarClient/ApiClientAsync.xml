@@ -75,28 +75,6 @@
         <Parameter Name="requests" Type="System.Collections.Generic.List&lt;VistarClient.Entities.AdRequest&gt;" />
       </Parameters>
       <Docs>
-        <param name="requests">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SubmitAdRequestsAsync">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;&gt; SubmitAdRequestsAsync (System.Collections.Generic.List&lt;VistarClient.Request.AdRequest&gt; requests);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt;&gt;&gt; SubmitAdRequestsAsync(class System.Collections.Generic.List`1&lt;class VistarClient.Request.AdRequest&gt; requests) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
-        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
-        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="requests" Type="System.Collections.Generic.List&lt;VistarClient.Request.AdRequest&gt;" />
-      </Parameters>
-      <Docs>
         <param name="requests">
         </param>
         <summary>Submits an asynchronous request to the ad server.</summary>

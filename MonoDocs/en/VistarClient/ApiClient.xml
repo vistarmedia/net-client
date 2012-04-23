@@ -81,38 +81,6 @@
         <Parameter Name="request" Type="VistarClient.Entities.AdRequest" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SubmitAdRequest">
-      <MemberSignature Language="C#" Value="public VistarClient.Entities.Advertisement SubmitAdRequest (VistarClient.Request.AdRequest request);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class VistarClient.Entities.Advertisement SubmitAdRequest(class VistarClient.Request.AdRequest request) cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.4477.27347</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28737</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28766</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.28779</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.29094</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31328</AssemblyVersion>
-        <AssemblyVersion>1.0.4477.31700</AssemblyVersion>
-        <AssemblyVersion>1.0.4478.17182</AssemblyVersion>
-        <AssemblyVersion>1.0.4478.17832</AssemblyVersion>
-        <AssemblyVersion>1.0.4485.18360</AssemblyVersion>
-        <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
-        <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
-        <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>VistarClient.Entities.Advertisement</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="request" Type="VistarClient.Request.AdRequest" />
-      </Parameters>
-      <Docs>
         <param name="request">A populated AdRequest object describing the advertisement to be created.</param>
         <summary>Submit an ad request to the server.</summary>
         <returns>Advertisement object representing the created ad.</returns>
