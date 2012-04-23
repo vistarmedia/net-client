@@ -31,7 +31,9 @@ namespace VistarClient {
       restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
 
       try {
+        Console.WriteLine("Sending request... {0}", System.Threading.Thread.CurrentThread.ManagedThreadId);
         var response = restClient.Execute<AdvertisementResponse>(restRequest);
+        Console.WriteLine("Recieved response... {0}", System.Threading.Thread.CurrentThread.ManagedThreadId);
         var ads = response.Data.advertisement;
         return ads;
       }

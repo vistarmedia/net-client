@@ -23,3 +23,4 @@ namespace VistarClient {
       return ads.First();
     }
   }
+}

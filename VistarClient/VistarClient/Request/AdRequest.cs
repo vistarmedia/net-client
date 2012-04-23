@@ -1,41 +1,32 @@
 using System;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using VistarClient.Entities;
 using VistarClient.Utils;
 
 namespace VistarClient.Request {
   public class AdRequest {
-    [JsonProperty(PropertyName="network_id")]
-    public string NetworkId { get; set; }
+    public string network_id { get; set; }
    
-    [JsonProperty(PropertyName="api_key")]
-    public string ApiKey { get; set; }
+    public string api_key { get; set; }
    
-    [JsonProperty(PropertyName="device_id")]
-    public string DeviceId { get; set; }
+    public string device_id { get; set; }
 
-    [JsonProperty(PropertyName="number_of_screens")]
-    public int NumberOfScreens { get; set; }
+    public int number_of_screens { get; set; }
    
-    [JsonProperty(PropertyName="display_time")]
-    public long DisplayTime { get; set; }
+    public long display_time { get; set; }
    
-    [JsonProperty(PropertyName="direct_connection")]
-    public bool DirectConnection { get; set; }
+    public bool direct_connection { get; set; }
    
-    [JsonProperty(PropertyName="display_area")]
-    public List<DisplayArea> DisplayAreas { get; set; }
+    public List<DisplayArea> display_area { get; set; }
 
-    [JsonProperty(PropertyName="device_attribute")]
-    public List<DeviceAttribute> DeviceAttributes { get; set; }
+    public List<DeviceAttribute> device_attribute { get; set; }
 
     public DateTime GetDisplayDateTime() {
-      return new DateTime().GetLocalFromUtcUnixTime(DisplayTime);
+      return new DateTime().GetLocalFromUtcUnixTime(display_time);
     }
 
     public void SetDisplayDateTime(DateTime displayTime) {
-      DisplayTime = displayTime.ToUtcUnixTime();
+      display_time = displayTime.ToUtcUnixTime();
     }
   }
 }

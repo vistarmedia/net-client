@@ -17,11 +17,11 @@ namespace VistarClient.Tests.Entities {
       var response = mockery.PartialMock<WebResponse>();
 
       var advertisement = new Advertisement(requestFactory) {
-        ProofOfPlayUrl = "http://test.url/proof_of_play.html"
+        proof_of_play_url = "http://test.url/proof_of_play.html"
       };
 
       using(mockery.Record()) {
-        Expect.Call(requestFactory.Create(advertisement.ProofOfPlayUrl)).Return(request);
+        Expect.Call(requestFactory.Create(advertisement.proof_of_play_url)).Return(request);
         Expect.Call(request.GetResponse()).Return(response);
       }
 
@@ -40,11 +40,11 @@ namespace VistarClient.Tests.Entities {
       var exception = new VistarWebException(new WebException(), HttpStatusCode.BadRequest);
 
       var advertisement = new Advertisement(requestFactory) {
-        ProofOfPlayUrl = "http://test.url/proof_of_play.html"
+        proof_of_play_url = "http://test.url/proof_of_play.html"
       };
 
       using(mockery.Record()) {
-        Expect.Call(requestFactory.Create(advertisement.ProofOfPlayUrl)).Return(request);
+        Expect.Call(requestFactory.Create(advertisement.proof_of_play_url)).Return(request);
         Expect.Call(request.GetResponse()).Throw(exception);
       }
 
@@ -65,11 +65,11 @@ namespace VistarClient.Tests.Entities {
       var exception = new VistarWebException(new WebException(), HttpStatusCode.RequestTimeout);
 
       var advertisement = new Advertisement(requestFactory) {
-        ProofOfPlayUrl = "http://test.url/proof_of_play.html"
+        proof_of_play_url = "http://test.url/proof_of_play.html"
       };
 
       using(mockery.Record()) {
-        Expect.Call(requestFactory.Create(advertisement.ProofOfPlayUrl)).Return(request);
+        Expect.Call(requestFactory.Create(advertisement.proof_of_play_url)).Return(request);
         Expect.Call(request.GetResponse()).Throw(exception);
       }
 
