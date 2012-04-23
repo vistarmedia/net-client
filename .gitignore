@@ -6,3 +6,4 @@ obj
 test-results
 run_test.sh
 TestResults.xml
+*.suo
