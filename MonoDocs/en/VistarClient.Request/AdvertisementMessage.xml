@@ -1,6 +1,6 @@
-<Type Name="Advertisement" FullName="VistarClient.Entities.Advertisement">
-  <TypeSignature Language="C#" Value="public class Advertisement" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Advertisement extends System.Object" />
+<Type Name="AdvertisementMessage" FullName="VistarClient.Request.AdvertisementMessage">
+  <TypeSignature Language="C#" Value="public class AdvertisementMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdvertisementMessage extends System.Object" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -15,7 +15,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Advertisement ();" />
+      <MemberSignature Language="C#" Value="public AdvertisementMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -27,25 +27,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Advertisement (VistarClient.Utils.IVistarWebRequestFactory requestFactory);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class VistarClient.Utils.IVistarWebRequestFactory requestFactory) cil managed" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="requestFactory" Type="VistarClient.Utils.IVistarWebRequestFactory" />
-      </Parameters>
-      <Docs>
-        <param name="requestFactory">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AssetId">
-      <MemberSignature Language="C#" Value="public string AssetId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string AssetId" />
+    <Member MemberName="asset_id">
+      <MemberSignature Language="C#" Value="public string asset_id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string asset_id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -59,9 +43,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AssetUrl">
-      <MemberSignature Language="C#" Value="public string AssetUrl { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string AssetUrl" />
+    <Member MemberName="asset_url">
+      <MemberSignature Language="C#" Value="public string asset_url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string asset_url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -75,9 +59,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DisplayAreaId">
-      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string DisplayAreaId" />
+    <Member MemberName="display_area_id">
+      <MemberSignature Language="C#" Value="public string display_area_id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string display_area_id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -91,9 +75,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Height">
-      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+    <Member MemberName="height">
+      <MemberSignature Language="C#" Value="public int height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -107,9 +91,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+    <Member MemberName="id">
+      <MemberSignature Language="C#" Value="public string id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -123,9 +107,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LeaseExpiry">
-      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int64 LeaseExpiry" />
+    <Member MemberName="lease_expiry">
+      <MemberSignature Language="C#" Value="public long lease_expiry { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 lease_expiry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -139,9 +123,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LengthInSeconds">
-      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 LengthInSeconds" />
+    <Member MemberName="length_in_seconds">
+      <MemberSignature Language="C#" Value="public int length_in_seconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 length_in_seconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -155,9 +139,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MimeType">
-      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
+    <Member MemberName="mime_type">
+      <MemberSignature Language="C#" Value="public string mime_type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string mime_type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -171,9 +155,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ProofOfPlayUrl">
-      <MemberSignature Language="C#" Value="public string ProofOfPlayUrl { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProofOfPlayUrl" />
+    <Member MemberName="proof_of_play_url">
+      <MemberSignature Language="C#" Value="public string proof_of_play_url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string proof_of_play_url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
@@ -187,25 +171,9 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SendProofOfPlay">
-      <MemberSignature Language="C#" Value="public void SendProofOfPlay ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendProofOfPlay() cil managed" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Width">
-      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+    <Member MemberName="width">
+      <MemberSignature Language="C#" Value="public int width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>

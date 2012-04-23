@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="VistarClient" Version="1.0.4489.22141">
+    <Assembly Name="VistarClient" Version="1.0.4496.27578">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>
@@ -43,13 +43,14 @@
       <Type Name="InvalidLeaseException" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Entities">
+      <Type Name="AdRequest" Kind="Class" />
       <Type Name="Advertisement" Kind="Class" />
       <Type Name="DeviceAttribute" Kind="Class" />
       <Type Name="DisplayArea" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Request">
-      <Type Name="AdRequest" Kind="Class" />
-      <Type Name="AdvertisementResponse" Kind="Class" />
+      <Type Name="AdvertisementMessage" Kind="Class" />
+      <Type Name="AdvertisementResponseMessage" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Utils">
       <Type Name="DateTimeExtensions" Kind="Class" />

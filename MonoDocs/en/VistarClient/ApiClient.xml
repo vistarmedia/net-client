@@ -17,6 +17,8 @@
     <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
     <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
     <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+    <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
+    <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,6 +36,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+        <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
+        <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,6 +52,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+        <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
+        <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adRequestor" Type="VistarClient.IAdRequestor" />
@@ -58,6 +64,27 @@
         <summary>Used for testing purposes only</summary>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitAdRequest">
+      <MemberSignature Language="C#" Value="public VistarClient.Entities.Advertisement SubmitAdRequest (VistarClient.Entities.AdRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class VistarClient.Entities.Advertisement SubmitAdRequest(class VistarClient.Entities.AdRequest request) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
+        <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>VistarClient.Entities.Advertisement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="VistarClient.Entities.AdRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAdRequest">

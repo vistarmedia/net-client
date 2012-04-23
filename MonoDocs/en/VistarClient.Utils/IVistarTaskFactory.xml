@@ -6,6 +6,8 @@
     <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
     <AssemblyVersion>1.0.4489.18553</AssemblyVersion>
     <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
+    <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
+    <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -15,6 +17,29 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName="StartNew">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt; StartNew (Func&lt;VistarClient.Entities.AdRequest,System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt; method, VistarClient.Entities.AdRequest adRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt;&gt; StartNew(class System.Func`2&lt;class VistarClient.Entities.AdRequest, class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt;&gt; method, class VistarClient.Entities.AdRequest adRequest) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
+        <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="method" Type="System.Func&lt;VistarClient.Entities.AdRequest,System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;" />
+        <Parameter Name="adRequest" Type="VistarClient.Entities.AdRequest" />
+      </Parameters>
+      <Docs>
+        <param name="method">To be added.</param>
+        <param name="adRequest">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="StartNew">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt; StartNew (Func&lt;VistarClient.Request.AdRequest,System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt; method, VistarClient.Request.AdRequest adRequest);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt;&gt; StartNew(class System.Func`2&lt;class VistarClient.Request.AdRequest, class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt;&gt; method, class VistarClient.Request.AdRequest adRequest) cil managed" />
