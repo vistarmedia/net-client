@@ -2,6 +2,10 @@
 This repository contains an API which allows clients to schedule real time
 ads from [Vistar Media](http://www.vistarmedia.com/)'s ad servers.
 
+
 Documentation can found in /MonoDocs/html
 
 Usage examples can be found in /usage.html
+
+
+This project was developed on [Mono](http://mono-project.com/), but will load and build in Microsoft Visual Studio.
