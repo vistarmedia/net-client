@@ -29,7 +29,7 @@ namespace VistarClient {
 
     public List<Advertisement> RunSubmitAdRequest(AdRequest request) {
       restRequest.RequestFormat = DataFormat.Json;
-      string data = restRequest.JsonSerializer.Serialize(request);
+      string data = restRequest.JsonSerializer.Serialize(request.ToMessage());
       restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
 
       try {

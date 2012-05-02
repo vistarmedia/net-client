@@ -32,16 +32,24 @@ namespace VistarClient.Entities {
     }
 
     internal AdRequestMessage ToMessage() {
-      return new AdRequestMessage {
+      var message = new AdRequestMessage {
         network_id = NetworkId,
         api_key = ApiKey,
         device_id = DeviceId,
         number_of_screens = NumberOfScreens,
         display_time = DisplayTime,
-        direct_connection = DirectConnection,
-        display_area = DisplayAreas.Select(da => da.ToMessage()).ToList(),
-        device_attribute = DeviceAttributes.Select(dattr => dattr.ToMessage()).ToList()
+        direct_connection = DirectConnection
       };
+
+      message.display_area = DisplayAreas != null
+        ? DisplayAreas.Select(da => da.ToMessage()).ToList()
+        : new List<DisplayAreaMessage>();
+
+      message.device_attribute = DeviceAttributes != null
+        ? DeviceAttributes.Select(dattr => dattr.ToMessage()).ToList()
+        : new List<DeviceAttributeMessage>();
+
+      return message;
     }
   }
 }
