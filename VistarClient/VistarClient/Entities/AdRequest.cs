@@ -31,7 +31,7 @@ namespace VistarClient.Entities {
       DisplayTime = displayTime.ToUtcUnixTime();
     }
 
-    internal AdRequestMessage ToMessage() {
+    public AdRequestMessage ToMessage() {
       var message = new AdRequestMessage {
         network_id = NetworkId,
         api_key = ApiKey,

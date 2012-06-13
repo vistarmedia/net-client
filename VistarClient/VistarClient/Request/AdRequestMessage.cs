@@ -4,7 +4,7 @@ using VistarClient.Entities;
 using VistarClient.Utils;
 
 namespace VistarClient.Request {
-  internal class AdRequestMessage {
+  public class AdRequestMessage {
     public string network_id { get; set; }
 
     public string api_key { get; set; }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 namespace VistarClient.Request {
-  internal class DisplayAreaMessage {
+  public class DisplayAreaMessage {
     public string id { get; set; }
 
     public int width { get; set; }

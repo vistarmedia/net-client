@@ -7,6 +7,7 @@ using VistarClient.Entities;
 using VistarClient.Request;
 using System.Collections.Generic;
 using RestSharp.Serializers;
+using Is = Rhino.Mocks.Constraints.Is;
 
 namespace VistarClient.Tests {
   [TestFixture]
@@ -20,7 +21,7 @@ namespace VistarClient.Tests {
 
       var str = "some data";
 
-      var adRequest = new AdRequest();
+      var adRequest = new AdRequest { NetworkId = Guid.NewGuid().ToString() };
 
       var ad = new AdvertisementMessage { id = "test" };
       var ads = new List<AdvertisementMessage> { ad };
@@ -31,7 +32,10 @@ namespace VistarClient.Tests {
       using (mockery.Record()) {
         restRequest.RequestFormat = DataFormat.Json;
         Expect.Call(restRequest.JsonSerializer).Return(serializer);
-        Expect.Call(serializer.Serialize(adRequest)).Return(str);
+        Expect.Call(serializer.Serialize(null)).Constraints(
+          Rhino.Mocks.Constraints.Property.Value("network_id", adRequest.NetworkId) &&
+          Is.TypeOf<AdRequestMessage>()
+        ).Return(str);
         Expect.Call(restRequest.AddParameter("text/json", str, ParameterType.RequestBody)).Return(new RestRequest());
         Expect.Call(restClient.Execute<AdvertisementResponseMessage>(restRequest)).Return(restResponse);
       }
@@ -52,12 +56,15 @@ namespace VistarClient.Tests {
       var str = "some data";
 
       var error = "Test error message";
-      var adRequest = new AdRequest();
+      var adRequest = new AdRequest { NetworkId = Guid.NewGuid().ToString() };
 
       using (mockery.Record()) {
         restRequest.RequestFormat = DataFormat.Json;
         Expect.Call(restRequest.JsonSerializer).Return(serializer);
-        Expect.Call(serializer.Serialize(adRequest)).Return(str);
+        Expect.Call(serializer.Serialize(null)).Constraints(
+          Rhino.Mocks.Constraints.Property.Value("network_id", adRequest.NetworkId) &&
+          Is.TypeOf<AdRequestMessage>()
+        ).Return(str);
         Expect.Call(restRequest.AddParameter("text/json", str, ParameterType.RequestBody)).Return(new RestRequest());
         Expect.Call(restClient.Execute<AdvertisementResponseMessage>(restRequest)).Throw(new Exception(error));
       }
