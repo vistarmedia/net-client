@@ -31,11 +31,16 @@ namespace VistarClient {
       restRequest.RequestFormat = DataFormat.Json;
       string data = restRequest.JsonSerializer.Serialize(request.ToMessage());
       restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
-
+      
       try {
         var response = restClient.Execute<AdvertisementResponseMessage>(restRequest);
-        var ads = response.Data.advertisement.Select(Advertisement.FromMessage);
-        return ads.ToList();
+        var ads = new List<Advertisement>();
+        if (response.Data.advertisement != null) {
+          Console.WriteLine("1:4");
+          ads = response.Data.advertisement.Select(Advertisement.FromMessage).ToList();
+        }
+        Console.WriteLine("1:5");
+        return ads;
       }
       catch (Exception ex) {
         throw new ApiException(ex.Message);
