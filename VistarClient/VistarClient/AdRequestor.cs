@@ -36,10 +36,8 @@ namespace VistarClient {
         var response = restClient.Execute<AdvertisementResponseMessage>(restRequest);
         var ads = new List<Advertisement>();
         if (response.Data.advertisement != null) {
-          Console.WriteLine("1:4");
           ads = response.Data.advertisement.Select(Advertisement.FromMessage).ToList();
         }
-        Console.WriteLine("1:5");
         return ads;
       }
       catch (Exception ex) {
