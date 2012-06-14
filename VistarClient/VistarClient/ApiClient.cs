@@ -21,7 +21,10 @@ namespace VistarClient {
 
     public Advertisement SubmitAdRequest(AdRequest request) {
       var ads = adRequestor.RunSubmitAdRequest(request);
-      return ads.First();
+      if (ads.Any()) {
+        return ads.First();
+      }
+      return null;
     }
   }
 }

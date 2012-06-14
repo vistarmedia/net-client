@@ -32,6 +32,27 @@ namespace VistarClient.Tests.Request {
         Assert.AreEqual(ad, rtn);
       }
     }
+
+    [Test]
+    public void SubmitAdRequest_Should_Return_Null_When_No_Ads() {
+      var mockery = new MockRepository();
+      var adRequestor = mockery.StrictMock<IAdRequestor>();
+
+      var adRequest = new AdRequest();
+
+      var ad = new Advertisement();
+      var ads = new List<Advertisement>();
+
+      using (mockery.Record()) {
+        Expect.Call(adRequestor.RunSubmitAdRequest(adRequest)).Return(ads);
+      }
+
+      using (mockery.Playback()) {
+        var client = new ApiClient(adRequestor);
+        var rtn = client.SubmitAdRequest(adRequest);
+        Assert.IsNull(rtn);
+      }
+    }
   }
 }
 
