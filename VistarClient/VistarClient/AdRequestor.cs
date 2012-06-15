@@ -12,22 +12,23 @@ namespace VistarClient {
 
   public sealed class AdRequestor : IAdRequestor {
     readonly IRestClient restClient;
-    readonly IRestRequest restRequest;
+    readonly IRestRequestFactory requestFactory;
 
     internal const string RESOURCE = "api/v1/get_ad/json";
     internal const Method METHOD = Method.POST;
 
     public AdRequestor()
-      : this(new RestClient(GetHost()), new RestRequest(RESOURCE, METHOD)) {
+      : this(new RestClient(GetHost()), new RestRequestFactory()) {
 
     }
 
-    public AdRequestor(IRestClient restClient, IRestRequest restRequest) {
+    public AdRequestor(IRestClient restClient, IRestRequestFactory requestFactory) {
       this.restClient = restClient;
-      this.restRequest = restRequest;
+      this.requestFactory = requestFactory;
     }
 
     public List<Advertisement> RunSubmitAdRequest(AdRequest request) {
+      var restRequest = requestFactory.Create(RESOURCE, METHOD);
       restRequest.RequestFormat = DataFormat.Json;
       string data = restRequest.JsonSerializer.Serialize(request.ToMessage());
       restRequest.AddParameter("text/json", data, ParameterType.RequestBody);

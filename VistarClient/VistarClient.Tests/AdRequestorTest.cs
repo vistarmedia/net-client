@@ -16,6 +16,7 @@ namespace VistarClient.Tests {
     public void RunSubmitAdRequest() {
       var mockery = new MockRepository();
       var restClient = mockery.StrictMock<IRestClient>();
+      var restRequestFactory = mockery.StrictMock<IRestRequestFactory>();
       var restRequest = mockery.StrictMock<IRestRequest>();
       var serializer = mockery.Stub<ISerializer>();
 
@@ -30,6 +31,9 @@ namespace VistarClient.Tests {
       restResponse.Data = advertisementResponse;
 
       using (mockery.Record()) {
+        Expect.Call(restRequestFactory.Create(null, Method.POST))
+              .Constraints(Is.Anything(), Is.Equal(Method.POST))
+              .Return(restRequest);
         restRequest.RequestFormat = DataFormat.Json;
         Expect.Call(restRequest.JsonSerializer).Return(serializer);
         Expect.Call(serializer.Serialize(null)).Constraints(
@@ -41,7 +45,7 @@ namespace VistarClient.Tests {
       }
 
       using (mockery.Playback()) {
-        var results = new AdRequestor(restClient, restRequest).RunSubmitAdRequest(adRequest);
+        var results = new AdRequestor(restClient, restRequestFactory).RunSubmitAdRequest(adRequest);
         Assert.AreEqual(ad.id, results[0].Id);
       }
     }
@@ -50,6 +54,7 @@ namespace VistarClient.Tests {
     public void RunSubmitAdRequest_Returns_Empty_List_If_No_Ads() {
       var mockery = new MockRepository();
       var restClient = mockery.StrictMock<IRestClient>();
+      var restRequestFactory = mockery.StrictMock<IRestRequestFactory>();
       var restRequest = mockery.StrictMock<IRestRequest>();
       var serializer = mockery.Stub<ISerializer>();
 
@@ -62,6 +67,9 @@ namespace VistarClient.Tests {
       restResponse.Data = advertisementResponse;
 
       using (mockery.Record()) {
+        Expect.Call(restRequestFactory.Create(null, Method.POST))
+              .Constraints(Is.Anything(), Is.Equal(Method.POST))
+              .Return(restRequest);
         restRequest.RequestFormat = DataFormat.Json;
         Expect.Call(restRequest.JsonSerializer).Return(serializer);
         Expect.Call(serializer.Serialize(null)).Constraints(
@@ -73,7 +81,7 @@ namespace VistarClient.Tests {
       }
 
       using (mockery.Playback()) {
-        var results = new AdRequestor(restClient, restRequest).RunSubmitAdRequest(adRequest);
+        var results = new AdRequestor(restClient, restRequestFactory).RunSubmitAdRequest(adRequest);
         Assert.IsEmpty(results);
       }
     }
@@ -82,6 +90,7 @@ namespace VistarClient.Tests {
     public void RunSubmitAdRequest_Throws_ApiException_When_Error() {
       var mockery = new MockRepository();
       var restClient = mockery.StrictMock<IRestClient>();
+      var restRequestFactory = mockery.StrictMock<IRestRequestFactory>();
       var restRequest = mockery.DynamicMock<IRestRequest>();
       var serializer = mockery.Stub<ISerializer>();
 
@@ -91,6 +100,9 @@ namespace VistarClient.Tests {
       var adRequest = new AdRequest { NetworkId = Guid.NewGuid().ToString() };
 
       using (mockery.Record()) {
+        Expect.Call(restRequestFactory.Create(null, Method.POST))
+              .Constraints(Is.Anything(), Is.Equal(Method.POST))
+              .Return(restRequest);
         restRequest.RequestFormat = DataFormat.Json;
         Expect.Call(restRequest.JsonSerializer).Return(serializer);
         Expect.Call(serializer.Serialize(null)).Constraints(
@@ -103,7 +115,7 @@ namespace VistarClient.Tests {
 
       using (mockery.Playback()) {
         var ex = Assert.Throws(typeof(ApiException), () => {
-          new AdRequestor(restClient, restRequest).RunSubmitAdRequest(adRequest);
+          new AdRequestor(restClient, restRequestFactory).RunSubmitAdRequest(adRequest);
         });
 
         Assert.AreEqual(error, ex.Message);

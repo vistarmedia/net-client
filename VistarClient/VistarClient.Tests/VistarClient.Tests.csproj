@@ -71,6 +71,8 @@
     <Compile Include="AdRequestorTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
 </Project>
