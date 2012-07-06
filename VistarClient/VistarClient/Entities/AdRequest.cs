@@ -19,6 +19,18 @@ namespace VistarClient.Entities {
 
     public bool DirectConnection { get; set; }
 
+    public decimal Latitude { get; set; }
+    
+    public decimal Longitude { get; set; }
+    
+    public string Dma { get; set; }
+
+    public string VenueId { get; set; }
+
+    public int Duration { get; set; }
+
+    public int Interval { get; set; }
+
     public List<DisplayArea> DisplayAreas { get; set; }
 
     public List<DeviceAttribute> DeviceAttributes { get; set; }
@@ -38,7 +50,13 @@ namespace VistarClient.Entities {
         device_id = DeviceId,
         number_of_screens = NumberOfScreens,
         display_time = DisplayTime,
-        direct_connection = DirectConnection
+        direct_connection = DirectConnection,
+        latitude = Latitude,
+        longitude = Longitude,
+        dma = Dma,
+        venue_id = VenueId,
+        duration = Duration,
+        interval = Interval,
       };
 
       message.display_area = DisplayAreas != null

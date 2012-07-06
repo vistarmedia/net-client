@@ -9,39 +9,17 @@ using VistarClient.Request;
 using VistarClient.Utils;
 
 namespace VistarClient.Tests.Request {
- [TestFixture]
+  [TestFixture]
   public class ApiClientTest {
 
     [Test]
     public void SubmitAdRequest_Success() {
       var mockery = new MockRepository();
       var adRequestor = mockery.StrictMock<IAdRequestor>();
-     
-      var adRequest = new AdRequest();
-     
-      var ad = new Advertisement();
-      var ads = new List<Advertisement> { ad };
-     
-      using(mockery.Record()) {
-        Expect.Call(adRequestor.RunSubmitAdRequest(adRequest)).Return(ads);
-      }
-     
-      using(mockery.Playback()) {
-        var client = new ApiClient(adRequestor);
-        var rtn = client.SubmitAdRequest(adRequest);
-        Assert.AreEqual(ad, rtn);
-      }
-    }
-
-    [Test]
-    public void SubmitAdRequest_Should_Return_Null_When_No_Ads() {
-      var mockery = new MockRepository();
-      var adRequestor = mockery.StrictMock<IAdRequestor>();
 
       var adRequest = new AdRequest();
 
-      var ad = new Advertisement();
-      var ads = new List<Advertisement>();
+      var ads = new List<Advertisement> { new Advertisement() };
 
       using (mockery.Record()) {
         Expect.Call(adRequestor.RunSubmitAdRequest(adRequest)).Return(ads);
@@ -50,7 +28,7 @@ namespace VistarClient.Tests.Request {
       using (mockery.Playback()) {
         var client = new ApiClient(adRequestor);
         var rtn = client.SubmitAdRequest(adRequest);
-        Assert.IsNull(rtn);
+        Assert.AreEqual(ads, rtn);
       }
     }
   }

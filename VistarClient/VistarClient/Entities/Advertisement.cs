@@ -1,6 +1,7 @@
 using System.Net;
 using VistarClient.Utils;
 using VistarClient.Request;
+using System;
 
 namespace VistarClient.Entities {
   public class Advertisement {
@@ -34,6 +35,16 @@ namespace VistarClient.Entities {
 
     public int LengthInSeconds { get; set; }
 
+    public long DisplayTime { get; set; }
+
+    public DateTime GetDisplayDateTime() {
+      return new DateTime().GetLocalFromUtcUnixTime(DisplayTime);
+    }
+
+    public void SetDisplayDateTime(DateTime displayTime) {
+      DisplayTime = displayTime.ToUtcUnixTime();
+    }
+
     public void SendProofOfPlay() {
       var request = requestFactory.Create(ProofOfPlayUrl);
 
@@ -61,7 +72,8 @@ namespace VistarClient.Entities {
         Width = message.width,
         Height = message.height,
         MimeType = message.mime_type,
-        LengthInSeconds = message.length_in_seconds
+        LengthInSeconds = message.length_in_seconds,
+        DisplayTime = message.display_time,
       };
     }
   }

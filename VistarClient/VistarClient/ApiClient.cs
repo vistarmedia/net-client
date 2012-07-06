@@ -19,12 +19,8 @@ namespace VistarClient {
       this.adRequestor = adRequestor;
     }
 
-    public Advertisement SubmitAdRequest(AdRequest request) {
-      var ads = adRequestor.RunSubmitAdRequest(request);
-      if (ads.Any()) {
-        return ads.First();
-      }
-      return null;
+    public List<Advertisement> SubmitAdRequest(AdRequest request) {
+      return adRequestor.RunSubmitAdRequest(request);
     }
   }
 }

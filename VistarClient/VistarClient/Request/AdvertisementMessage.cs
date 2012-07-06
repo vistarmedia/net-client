@@ -22,6 +22,8 @@ namespace VistarClient.Request {
     public string mime_type { get; set; }
 
     public int length_in_seconds { get; set; }
+
+    public long display_time { get; set; }
   }
 }
 
