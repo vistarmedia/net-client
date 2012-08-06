@@ -7,6 +7,8 @@ namespace VistarClient.Request {
 
     public string proof_of_play_url { get; set; }
 
+    public string expiration_url { get; set; }
+
     public long lease_expiry { get; set; }
 
     public string display_area_id { get; set; }

@@ -19,6 +19,8 @@ namespace VistarClient.Entities {
 
     public string ProofOfPlayUrl { get; set; }
 
+    public string ExpirationUrl { get; set; }
+
     public long LeaseExpiry { get; set; }
 
     public string DisplayAreaId { get; set; }
@@ -65,6 +67,7 @@ namespace VistarClient.Entities {
       return new Advertisement {
         Id = message.id,
         ProofOfPlayUrl = message.proof_of_play_url,
+        ExpirationUrl = message.expiration_url,
         LeaseExpiry = message.lease_expiry,
         DisplayAreaId = message.display_area_id,
         AssetId = message.asset_id,
