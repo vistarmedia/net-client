@@ -57,7 +57,7 @@ namespace VistarClient.Entities {
         if (ex.StatusCode == HttpStatusCode.BadRequest) {
           throw new InvalidLeaseException();
         }
-        else if (ex.StatusCode != HttpStatusCode.NoContent) {
+        else if (ex.StatusCode != HttpStatusCode.OK) {
           throw new ApiException(ex.Message);
         }
       }

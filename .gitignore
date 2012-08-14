@@ -6,4 +6,5 @@ obj
 test-results
 run_test.sh
 TestResults.xml
+*VisualState.xml
 *.suo
