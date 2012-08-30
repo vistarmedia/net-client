@@ -27,9 +27,9 @@ namespace VistarClient.Entities {
 
     public string VenueId { get; set; }
 
-    public int Duration { get; set; }
+    public int? Duration { get; set; }
 
-    public int Interval { get; set; }
+    public int? Interval { get; set; }
 
     public List<DisplayArea> DisplayAreas { get; set; }
 

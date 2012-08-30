@@ -25,9 +25,9 @@ namespace VistarClient.Request {
 
     public string venue_id { get; set; }
 
-    public int duration { get; set; }
+    public int? duration { get; set; }
     
-    public int interval { get; set; }
+    public int? interval { get; set; }
 
     public List<DisplayAreaMessage> display_area { get; set; }
 
