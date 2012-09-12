@@ -5,6 +5,7 @@ using VistarClient.Entities;
 using VistarClient.Utils;
 using VistarClient.Request;
 
+
 namespace VistarClient.Entities {
   public class AdRequest {
     public string NetworkId { get; set; }
@@ -19,9 +20,9 @@ namespace VistarClient.Entities {
 
     public bool DirectConnection { get; set; }
 
-    public decimal Latitude { get; set; }
+    public decimal? Latitude { get; set; }
     
-    public decimal Longitude { get; set; }
+    public decimal? Longitude { get; set; }
     
     public string Dma { get; set; }
 

@@ -17,9 +17,9 @@ namespace VistarClient.Request {
 
     public bool direct_connection { get; set; }
 
-    public decimal latitude { get; set; }
+    public decimal? latitude { get; set; }
 
-    public decimal longitude { get; set; }
+    public decimal? longitude { get; set; }
 
     public string dma { get; set; }
 
