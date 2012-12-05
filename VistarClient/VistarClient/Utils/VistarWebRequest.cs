@@ -15,6 +15,11 @@ namespace VistarClient.Utils {
 
     public WebResponse GetResponse() {
       try {
+        if (VistarGlobals.IsDebug) {
+          Console.WriteLine("INITIATING WEB REQUEST...\n");
+          Console.WriteLine("Request is null? {0}\n", request == null);
+          Console.WriteLine("URL: {0}\n", request.RequestUri);
+        }
         return request.GetResponse();
       }
       catch (WebException ex) {

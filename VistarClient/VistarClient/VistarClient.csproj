@@ -53,6 +53,7 @@
     <Compile Include="Request\DeviceAttributeMessage.cs" />
     <Compile Include="Request\DisplayAreaMessage.cs" />
     <Compile Include="RestRequestFactory.cs" />
+    <Compile Include="Utils\VistarGlobals.cs" />
     <Compile Include="Utils\VistarWebRequestFactory.cs" />
     <Compile Include="Utils\VistarWebRequest.cs" />
     <Compile Include="Utils\VistarWebException.cs" />
