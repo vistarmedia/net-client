@@ -36,6 +36,13 @@ namespace VistarClient {
       try {
         var response = restClient.Execute<AdvertisementResponseMessage>(restRequest);
         var ads = new List<Advertisement>();
+        if (response.Data == null && response.ErrorMessage != null) {
+          throw new ApiException("AdRequest Failed: " + response.ErrorMessage);
+        }
+        else if (response.Data == null) {
+          throw new ApiException("AdRequest Failed.");
+        }
+
         if (response.Data.advertisement != null) {
           ads = response.Data.advertisement.Select(Advertisement.FromMessage).ToList();
         }
