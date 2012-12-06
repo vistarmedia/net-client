@@ -17,15 +17,13 @@ namespace VistarClient.Utils {
       try {
         if (VistarGlobals.IsDebug) {
           Console.WriteLine("INITIATING WEB REQUEST...\n");
-          Console.WriteLine("Request is null? {0}\n", request == null);
           Console.WriteLine("URL: {0}\n", request.RequestUri);
         }
         return request.GetResponse();
       }
-      catch (WebException ex) {
-        if (VistarGlobals.IsDebug) {
-          Console.WriteLine("WebException: {0}, StackTrace: {1}",
-            ex.Message, ex.StackTrace);
+      catch (WebException ex) {        
+        if (ex.Response == null) {          
+          throw new ApiException(ex.Message);
         }
         throw new VistarWebException(ex, ((HttpWebResponse)ex.Response).StatusCode);
       }
