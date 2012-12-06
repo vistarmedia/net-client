@@ -23,6 +23,10 @@ namespace VistarClient.Utils {
         return request.GetResponse();
       }
       catch (WebException ex) {
+        if (VistarGlobals.IsDebug) {
+          Console.WriteLine("WebException: {0}, StackTrace: {1}",
+            ex.Message, ex.StackTrace);
+        }
         throw new VistarWebException(ex, ((HttpWebResponse)ex.Response).StatusCode);
       }
     }
