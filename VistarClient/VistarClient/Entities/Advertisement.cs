@@ -51,7 +51,8 @@ namespace VistarClient.Entities {
       var request = requestFactory.Create(ProofOfPlayUrl);
 
       try {
-        request.GetResponse();
+        var response = request.GetResponse();
+        response.Close();
       }
       catch (VistarWebException ex) {
         if (ex.StatusCode == HttpStatusCode.BadRequest) {
