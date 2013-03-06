@@ -18,6 +18,8 @@ namespace VistarClient.Entities {
 
     public bool AllowAudio { get; set; }
 
+    public int CpmFloorCents { get; set; }
+
     internal DisplayAreaMessage ToMessage() {
       return new DisplayAreaMessage {
         id = Id,
@@ -26,7 +28,8 @@ namespace VistarClient.Entities {
         supported_media = SupportedMedia,
         min_duration = MinDuration,
         max_duration = MaxDuration,
-        allow_audio = AllowAudio
+        allow_audio = AllowAudio,
+        cpm_floor_cents = CpmFloorCents
       };
     }
   }
