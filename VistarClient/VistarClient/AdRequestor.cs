@@ -17,6 +17,8 @@ namespace VistarClient {
     internal const string RESOURCE = "api/v1/get_ad/json";
     internal const Method METHOD = Method.POST;
 
+    static string host;
+
     public AdRequestor()
       : this(new RestClient(GetHost()), new RestRequestFactory()) {
 
@@ -54,12 +56,20 @@ namespace VistarClient {
     }
 
     internal static string GetHost() {
+      if (AdRequestor.host != null) {
+        return AdRequestor.host;
+      }
+
       var host = System.Configuration.ConfigurationManager.AppSettings["ApiHost"];
       if (host != null) {
         return string.Format("http://{0}", host);
       }
 
       throw new ApiException("You must specify an ApiHost in your application's configuration file.");
+    }
+
+    public static void SetHost(string host) {
+      AdRequestor.host = host;
     }
   }
 }
