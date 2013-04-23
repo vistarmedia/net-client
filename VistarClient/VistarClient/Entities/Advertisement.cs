@@ -15,43 +15,59 @@ namespace VistarClient.Entities {
       this.requestFactory = requestFactory;
     }
 
-    public string Id { get; set; }
+    public string Id { get; private set; }
 
-    public string ProofOfPlayUrl { get; set; }
+    public virtual string ProofOfPlayUrl { get; private set; }
 
-    public string ExpirationUrl { get; set; }
+    public string ExpirationUrl { get; private set; }
 
-    public long LeaseExpiry { get; set; }
+    public long LeaseExpiry { get; private set; }
 
-    public string DisplayAreaId { get; set; }
+    public string DisplayAreaId { get; private set; }
 
-    public string AssetId { get; set; }
+    public string AssetId { get; private set; }
 
-    public string AssetUrl { get; set; }
+    public string AssetUrl { get; private set; }
 
-    public int Width { get; set; }
+    public int Width { get; private set; }
 
-    public int Height { get; set; }
+    public int Height { get; private set; }
 
-    public string MimeType { get; set; }
+    public string MimeType { get; private set; }
 
-    public int LengthInSeconds { get; set; }
+    public int LengthInSeconds { get; private set; }
 
-    public long DisplayTime { get; set; }
+    public long DisplayTime { get; private set; }
 
     public DateTime GetDisplayDateTime() {
       return new DateTime().GetLocalFromUtcUnixTime(DisplayTime);
-    }
-
-    public void SetDisplayDateTime(DateTime displayTime) {
-      DisplayTime = displayTime.ToUtcUnixTime();
     }
 
     public void SendProofOfPlay() {
       var request = requestFactory.Create(ProofOfPlayUrl);
 
       try {
-        var response = request.GetResponse();
+        var response = request.Get();
+        response.Close();
+      }
+      catch (VistarWebException ex) {
+        if (ex.StatusCode == HttpStatusCode.BadRequest) {
+          throw new InvalidLeaseException();
+        }
+        else if (ex.StatusCode != HttpStatusCode.OK) {
+          throw new ApiException(ex.Message);
+        }
+      }
+    }
+
+    public void SendProofOfPlay(DateTime displayTime, int numberOfScreens) {
+      var request = requestFactory.Create(ProofOfPlayUrl);
+
+      try {
+        var response = request.Post(
+          string.Format("{{\"display_time\": {0}, \"number_of_screens\": {1}}}",
+            displayTime.ToUtcUnixTime(), numberOfScreens));
+
         response.Close();
       }
       catch (VistarWebException ex) {
