@@ -44,7 +44,11 @@ namespace VistarClient.Entities {
     }
 
     public void SendProofOfPlay() {
-      var request = requestFactory.Create(ProofOfPlayUrl);
+      SendProofOfPlay(ProofOfPlayUrl);
+    }
+
+    public void SendProofOfPlay(string url) {
+      var request = requestFactory.Create(url);
 
       try {
         var response = request.Get();
@@ -60,8 +64,12 @@ namespace VistarClient.Entities {
       }
     }
 
-    public void SendProofOfPlay(DateTime displayTime, int numberOfScreens) {
-      var request = requestFactory.Create(ProofOfPlayUrl);
+    public SendProofOfPlay(DateTime displayTime, int numberOfScreens) {
+      SendProofOfPlay(ProofOfPlayUrl, displayTime, numberOfScreens);
+    }
+
+    public void SendProofOfPlay(string url, DateTime displayTime, int numberOfScreens) {
+      var request = requestFactory.Create(url);
 
       try {
         var response = request.Post(
