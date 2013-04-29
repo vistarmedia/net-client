@@ -64,7 +64,7 @@ namespace VistarClient.Entities {
       }
     }
 
-    public SendProofOfPlay(DateTime displayTime, int numberOfScreens) {
+    public void SendProofOfPlay(DateTime displayTime, int numberOfScreens) {
       SendProofOfPlay(ProofOfPlayUrl, displayTime, numberOfScreens);
     }
 
