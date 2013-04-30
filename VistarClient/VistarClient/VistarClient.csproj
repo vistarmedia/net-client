@@ -52,6 +52,7 @@
     <Compile Include="ApiException.cs" />
     <Compile Include="Request\DeviceAttributeMessage.cs" />
     <Compile Include="Request\DisplayAreaMessage.cs" />
+    <Compile Include="Request\ProofOfPlayMessage.cs" />
     <Compile Include="RestRequestFactory.cs" />
     <Compile Include="Utils\VistarGlobals.cs" />
     <Compile Include="Utils\VistarWebRequestFactory.cs" />

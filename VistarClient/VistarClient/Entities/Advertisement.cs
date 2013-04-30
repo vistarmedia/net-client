@@ -1,7 +1,7 @@
-using System.Net;
-using VistarClient.Utils;
-using VistarClient.Request;
 using System;
+using System.Net;
+using VistarClient.Request;
+using VistarClient.Utils;
 
 namespace VistarClient.Entities {
   public class Advertisement {
@@ -44,11 +44,7 @@ namespace VistarClient.Entities {
     }
 
     public void SendProofOfPlay() {
-      SendProofOfPlay(ProofOfPlayUrl);
-    }
-
-    public void SendProofOfPlay(string url) {
-      var request = requestFactory.Create(url);
+      var request = requestFactory.Create(ProofOfPlayUrl);
 
       try {
         var response = request.Get();
@@ -64,28 +60,8 @@ namespace VistarClient.Entities {
       }
     }
 
-    public void SendProofOfPlay(DateTime displayTime, int numberOfScreens) {
-      SendProofOfPlay(ProofOfPlayUrl, displayTime, numberOfScreens);
-    }
-
-    public void SendProofOfPlay(string url, DateTime displayTime, int numberOfScreens) {
-      var request = requestFactory.Create(url);
-
-      try {
-        var response = request.Post(
-          string.Format("{{\"display_time\": {0}, \"number_of_screens\": {1}}}",
-            displayTime.ToUtcUnixTime(), numberOfScreens));
-
-        response.Close();
-      }
-      catch (VistarWebException ex) {
-        if (ex.StatusCode == HttpStatusCode.BadRequest) {
-          throw new InvalidLeaseException();
-        }
-        else if (ex.StatusCode != HttpStatusCode.OK) {
-          throw new ApiException(ex.Message);
-        }
-      }
+    public void SendProofOfPlay(ProofOfPlayMessage message) {
+      message.Send(ProofOfPlayUrl);
     }
 
     internal static Advertisement FromMessage(AdvertisementMessage message) {

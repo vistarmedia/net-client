@@ -4,6 +4,7 @@ using Rhino.Mocks;
 using VistarClient.Entities;
 using VistarClient.Utils;
 using System;
+using VistarClient.Request;
 
 namespace VistarClient.Tests.Entities {
   [TestFixture]
@@ -96,7 +97,12 @@ namespace VistarClient.Tests.Entities {
       }
 
       using (mockery.Playback()) {
-        advertisement.SendProofOfPlay(displayTime, 2);
+        advertisement.SendProofOfPlay(
+          new ProofOfPlayMessage(requestFactory) {
+            DisplayTime = displayTime,
+            NumberOfScreens = 2
+          }
+        );
       }
     }
   }
