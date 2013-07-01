@@ -14,20 +14,35 @@ namespace VistarClient {
 
     }
 
-    public ApiClientAsync(IAdRequestor adRequestor, IVistarTaskFactory taskFactory) {
+    public ApiClientAsync(IAdRequestor adRequestor,
+        IVistarTaskFactory taskFactory) {
       this.adRequestor = adRequestor;
       this.taskFactory = taskFactory;
     }
 
-    public List<Task<List<Advertisement>>> SubmitAdRequestsAsync(List<AdRequest> requests) {
+    public List<Task<List<Advertisement>>> SubmitAdRequestsAsync(
+        List<AdRequest> requests) {
       var tasks = new List<Task<List<Advertisement>>>();
 
       foreach (var request in requests) {
-        var task = taskFactory.StartNew(adRequestor.RunSubmitAdRequest, request);
+        var task = taskFactory
+          .StartNew(adRequestor.RunSubmitAdRequest, request);
         tasks.Add(task);
       }
 
       return tasks;
+    }
+
+    internal static string GetHost() {
+      var host =
+        System.Configuration.ConfigurationManager.AppSettings["ApiHost"];
+
+      if (host != null) {
+        return string.Format("http://{0}", host);
+      }
+
+      throw new ApiException(
+        "You must specify an ApiHost in your configuration file.");
     }
   }
 }

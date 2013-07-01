@@ -10,23 +10,18 @@ namespace VistarClient {
     List<Advertisement> RunSubmitAdRequest(AdRequest request);
   }
 
-  public sealed class AdRequestor : IAdRequestor {
-    readonly IRestClient restClient;
-    readonly IRestRequestFactory requestFactory;
-
-    internal const string RESOURCE = "api/v1/get_ad/json";
-    internal const Method METHOD = Method.POST;
-
-    static string host;
+  public sealed class AdRequestor : RestService, IAdRequestor {
+    const string RESOURCE = "/api/v1/get_ad/json";
 
     public AdRequestor()
       : this(new RestClient(GetHost()), new RestRequestFactory()) {
 
     }
 
-    public AdRequestor(IRestClient restClient, IRestRequestFactory requestFactory) {
-      this.restClient = restClient;
-      this.requestFactory = requestFactory;
+    public AdRequestor(IRestClient restClient,
+      IRestRequestFactory requestFactory)
+      : base(restClient, requestFactory) {
+
     }
 
     public List<Advertisement> RunSubmitAdRequest(AdRequest request) {
@@ -34,9 +29,10 @@ namespace VistarClient {
       restRequest.RequestFormat = DataFormat.Json;
       string data = restRequest.JsonSerializer.Serialize(request.ToMessage());
       restRequest.AddParameter("text/json", data, ParameterType.RequestBody);
-      
+
       try {
-        var response = restClient.Execute<AdvertisementResponseMessage>(restRequest);
+        var response = restClient
+          .Execute<AdvertisementResponseMessage>(restRequest);
         var ads = new List<Advertisement>();
         if (response.Data == null && response.ErrorMessage != null) {
           throw new ApiException("AdRequest Failed: " + response.ErrorMessage);
@@ -46,7 +42,8 @@ namespace VistarClient {
         }
 
         if (response.Data.advertisement != null) {
-          ads = response.Data.advertisement.Select(Advertisement.FromMessage).ToList();
+          ads = response.Data.advertisement
+            .Select(Advertisement.FromMessage).ToList();
         }
         return ads;
       }
@@ -56,20 +53,15 @@ namespace VistarClient {
     }
 
     internal static string GetHost() {
-      if (AdRequestor.host != null) {
-        return AdRequestor.host;
-      }
+      var host =
+        System.Configuration.ConfigurationManager.AppSettings["ApiHost"];
 
-      var host = System.Configuration.ConfigurationManager.AppSettings["ApiHost"];
       if (host != null) {
         return string.Format("http://{0}", host);
       }
 
-      throw new ApiException("You must specify an ApiHost in your application's configuration file.");
-    }
-
-    public static void SetHost(string host) {
-      AdRequestor.host = host;
+      throw new ApiException(
+        "You must specify an ApiHost in your configuration file.");
     }
   }
 }

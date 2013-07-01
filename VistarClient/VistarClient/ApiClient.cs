@@ -11,7 +11,7 @@ namespace VistarClient {
     readonly IAdRequestor adRequestor;
 
     public ApiClient()
-      : this(new AdRequestor(new RestClient(AdRequestor.GetHost()), new RestRequestFactory())) {
+      : this(new AdRequestor()) {
 
     }
 

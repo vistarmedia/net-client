@@ -30,13 +30,13 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="RestSharp, Version=102.7.0.0, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="RestSharp, Version=102.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\RestSharp.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -44,6 +44,7 @@
     <Compile Include="Entities\DisplayArea.cs" />
     <Compile Include="Entities\DeviceAttribute.cs" />
     <Compile Include="Entities\Advertisement.cs" />
+    <Compile Include="Entities\Venue.cs" />
     <Compile Include="Request\AdvertisementMessage.cs" />
     <Compile Include="Request\AdvertisementResponseMessage.cs" />
     <Compile Include="Request\AdRequestMessage.cs" />
@@ -53,7 +54,9 @@
     <Compile Include="Request\DeviceAttributeMessage.cs" />
     <Compile Include="Request\DisplayAreaMessage.cs" />
     <Compile Include="Request\ProofOfPlayMessage.cs" />
+    <Compile Include="Request\VenueMessage.cs" />
     <Compile Include="RestRequestFactory.cs" />
+    <Compile Include="RestService.cs" />
     <Compile Include="Utils\VistarGlobals.cs" />
     <Compile Include="Utils\VistarWebRequestFactory.cs" />
     <Compile Include="Utils\VistarWebRequest.cs" />
@@ -62,6 +65,7 @@
     <Compile Include="Utils\VistarTaskFactory.cs" />
     <Compile Include="AdRequestor.cs" />
     <Compile Include="ApiClientAsync.cs" />
+    <Compile Include="VenueService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup />
