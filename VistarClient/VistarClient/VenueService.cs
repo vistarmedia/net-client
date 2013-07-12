@@ -88,10 +88,10 @@ namespace VistarClient {
 
     static string GetHost() {
       var host =
-        System.Configuration.ConfigurationManager.AppSettings["RestHost"];
+        System.Configuration.ConfigurationManager.AppSettings["RestUrl"];
 
       if (host != null) {
-        return string.Format("http://{0}", host);
+        return host;
       }
 
       throw new ApiException(
