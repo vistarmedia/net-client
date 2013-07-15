@@ -53,8 +53,9 @@ namespace VistarClient {
 
       try {
         var response = restClient.Execute(restRequest);
-        if (response.StatusCode == HttpStatusCode.BadRequest) {
-          throw new ApiException("Error saving venue: " + response.Content);
+        if (response.StatusCode != HttpStatusCode.Created
+                  && response.StatusCode != HttpStatusCode.OK) {
+            throw new ApiException("Error saving venue: " + response.Content);
         }
       }
       catch (Exception ex) {
