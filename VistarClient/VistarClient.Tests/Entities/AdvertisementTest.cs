@@ -99,8 +99,7 @@ namespace VistarClient.Tests.Entities {
       using (mockery.Playback()) {
         advertisement.SendProofOfPlay(
           new ProofOfPlayMessage(requestFactory) {
-            DisplayTime = displayTime,
-            NumberOfScreens = 2
+            DisplayTime = displayTime
           }
         );
       }
