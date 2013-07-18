@@ -14,8 +14,6 @@ namespace VistarClient.Entities {
 
     public string DeviceId { get; set; }
 
-    public int NumberOfScreens { get; set; }
-
     public long DisplayTime { get; set; }
 
     public bool DirectConnection { get; set; }
@@ -49,7 +47,6 @@ namespace VistarClient.Entities {
         network_id = NetworkId,
         api_key = ApiKey,
         device_id = DeviceId,
-        number_of_screens = NumberOfScreens,
         display_time = DisplayTime,
         direct_connection = DirectConnection,
         latitude = Latitude,
