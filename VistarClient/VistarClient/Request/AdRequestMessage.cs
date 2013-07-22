@@ -11,8 +11,6 @@ namespace VistarClient.Request {
 
     public string device_id { get; set; }
 
-    public int number_of_screens { get; set; }
-
     public long display_time { get; set; }
 
     public bool direct_connection { get; set; }

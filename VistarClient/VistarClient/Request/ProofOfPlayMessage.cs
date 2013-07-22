@@ -7,7 +7,6 @@ namespace VistarClient.Request {
     readonly IVistarWebRequestFactory requestFactory;
 
     public DateTime DisplayTime { get; set; }
-    public int NumberOfScreens { get; set; }
 
     public ProofOfPlayMessage()
       : this(new VistarWebRequestFactory()) {
@@ -23,8 +22,8 @@ namespace VistarClient.Request {
 
       try {
         var response = request.Post(
-          string.Format("{{\"display_time\": {0}, \"number_of_screens\": {1}}}",
-            DisplayTime.ToUtcUnixTime(), NumberOfScreens));
+          string.Format("{{\"display_time\": {0}}}",
+            DisplayTime.ToUtcUnixTime()));
 
         response.Close();
       }
