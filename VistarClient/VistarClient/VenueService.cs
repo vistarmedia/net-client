@@ -101,10 +101,8 @@ namespace VistarClient {
       var taskFactory = new TaskFactory();
       var tasks = new List<Task<VenueSaveResponse>>();
       foreach (var request in requests) {
-        Console.WriteLine("Launching Task... {0} - {1}", request.Venue.PartnerVenueId, request.Venue.Name);
         var req = request;
         var task = Task.Factory.StartNew(() => {
-          Console.WriteLine("Starting... {0} - {1}", req.Venue.PartnerVenueId, req.Venue.Name);
           return DoSave(req);
         });
         tasks.Add(task);
@@ -113,7 +111,6 @@ namespace VistarClient {
     }
 
     VenueSaveResponse DoSave(VenueSaveRequest request) {
-      Console.WriteLine("Saving... {0} - {1}", request.Venue.PartnerVenueId, request.Venue.Name);
       var restRequest = GetRestRequest(request.Venue, request.Resource,
         request.Method);
 
@@ -156,6 +153,8 @@ namespace VistarClient {
       var restRequest = requestFactory.Create(resource, method);
       restRequest.RequestFormat = DataFormat.Json;
       string data = restRequest.JsonSerializer.Serialize(venue.ToMessage());
+      data = Encoding.ASCII.GetString(Encoding.UTF8.GetBytes(data));
+      
       restRequest.AddParameter("application/json", data,
         ParameterType.RequestBody);
       restRequest.Timeout = 500;
