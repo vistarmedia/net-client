@@ -43,7 +43,7 @@ namespace VistarClient {
       }
     }
 
-    const string RESOURCE = "/selling/locations/";
+    const string RESOURCE = "/selling/venues/";
 
     public VenueService()
       : base(new RestClient(GetHost()), new RestRequestFactory()) {
