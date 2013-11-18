@@ -4,6 +4,7 @@ using System.Linq;
 using RestSharp;
 using VistarClient.Entities;
 using VistarClient.Request;
+using VistarClient.Utils;
 
 namespace VistarClient {
   public interface IAdRequestor {
@@ -35,9 +36,15 @@ namespace VistarClient {
           .Execute<AdvertisementResponseMessage>(restRequest);
         var ads = new List<Advertisement>();
         if (response.Data == null && response.ErrorMessage != null) {
+          if (VistarGlobals.IsDebug) {
+            Console.WriteLine("Raw Response: {0}", response.Content);
+          }
           throw new ApiException("AdRequest Failed: " + response.ErrorMessage);
         }
         else if (response.Data == null) {
+          if (VistarGlobals.IsDebug) {
+            Console.WriteLine("Raw Response: {0}", response.Content);
+          }
           throw new ApiException("AdRequest Failed.");
         }
 
