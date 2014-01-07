@@ -34,6 +34,9 @@ namespace VistarClient {
       try {
         var response = restClient
           .Execute<AdvertisementResponseMessage>(restRequest);
+
+        Console.WriteLine("{0}\t{1}\t{2}", DateTime.Now, (int)response.StatusCode, response.Content);
+
         var ads = new List<Advertisement>();
         if (response.Data == null && response.ErrorMessage != null) {
           if (VistarGlobals.IsDebug) {
