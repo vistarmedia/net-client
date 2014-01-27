@@ -20,6 +20,8 @@ namespace VistarClient.Entities {
 
     public int CpmFloorCents { get; set; }
 
+    public string OrderId { get; set; }
+
     internal DisplayAreaMessage ToMessage() {
       return new DisplayAreaMessage {
         id = Id,
@@ -29,7 +31,8 @@ namespace VistarClient.Entities {
         min_duration = MinDuration,
         max_duration = MaxDuration,
         allow_audio = AllowAudio,
-        cpm_floor_cents = CpmFloorCents
+        cpm_floor_cents = CpmFloorCents,
+        order_id = OrderId
       };
     }
   }

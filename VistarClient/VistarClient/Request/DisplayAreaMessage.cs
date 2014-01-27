@@ -18,5 +18,7 @@ namespace VistarClient.Request {
     public bool allow_audio { get; set; }
 
     public int cpm_floor_cents { get; set; }
+
+    public string order_id { get; set; }
   }
 }
