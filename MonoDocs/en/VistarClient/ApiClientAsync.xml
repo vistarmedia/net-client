@@ -8,6 +8,7 @@
     <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+    <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,6 +47,7 @@
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="adRequestor" Type="VistarClient.IAdRequestor" />
@@ -67,6 +70,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;&gt;</ReturnType>

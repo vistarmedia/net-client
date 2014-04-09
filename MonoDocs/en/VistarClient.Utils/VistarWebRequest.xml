@@ -12,6 +12,7 @@
     <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+    <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,6 +28,23 @@
     </remarks>
   </Docs>
   <Members>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public System.Net.WebResponse Get ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebResponse Get() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetResponse">
       <MemberSignature Language="C#" Value="public System.Net.WebResponse GetResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebResponse GetResponse() cil managed" />
@@ -53,6 +71,26 @@
         </returns>
         <remarks>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Post">
+      <MemberSignature Language="C#" Value="public System.Net.WebResponse Post (string postData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebResponse Post(string postData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="postData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

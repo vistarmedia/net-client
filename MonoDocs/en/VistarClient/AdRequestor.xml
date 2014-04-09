@@ -1,6 +1,6 @@
 <Type Name="AdRequestor" FullName="VistarClient.AdRequestor">
-  <TypeSignature Language="C#" Value="public sealed class AdRequestor : VistarClient.IAdRequestor" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AdRequestor extends System.Object implements class VistarClient.IAdRequestor" />
+  <TypeSignature Language="C#" Value="public sealed class AdRequestor : VistarClient.RestService, VistarClient.IAdRequestor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AdRequestor extends VistarClient.RestService implements class VistarClient.IAdRequestor" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
@@ -8,9 +8,10 @@
     <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+    <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName>VistarClient.RestService</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -32,6 +33,7 @@
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -61,6 +63,24 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdRequestor (RestSharp.IRestClient restClient, VistarClient.IRestRequestFactory requestFactory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class RestSharp.IRestClient restClient, class VistarClient.IRestRequestFactory requestFactory) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="restClient" Type="RestSharp.IRestClient" />
+        <Parameter Name="requestFactory" Type="VistarClient.IRestRequestFactory" />
+      </Parameters>
+      <Docs>
+        <param name="restClient">To be added.</param>
+        <param name="requestFactory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RunSubmitAdRequest">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt; RunSubmitAdRequest (VistarClient.Entities.AdRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Advertisement&gt; RunSubmitAdRequest(class VistarClient.Entities.AdRequest request) cil managed" />
@@ -68,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;</ReturnType>

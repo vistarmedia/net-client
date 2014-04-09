@@ -1,0 +1,82 @@
+<Type Name="RestService" FullName="VistarClient.RestService">
+  <TypeSignature Language="C#" Value="public abstract class RestService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RestService extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>VistarClient</AssemblyName>
+    <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RestService (RestSharp.IRestClient restClient, VistarClient.IRestRequestFactory requestFactory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class RestSharp.IRestClient restClient, class VistarClient.IRestRequestFactory requestFactory) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="restClient" Type="RestSharp.IRestClient" />
+        <Parameter Name="requestFactory" Type="VistarClient.IRestRequestFactory" />
+      </Parameters>
+      <Docs>
+        <param name="restClient">To be added.</param>
+        <param name="requestFactory">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="METHOD">
+      <MemberSignature Language="C#" Value="protected const RestSharp.Method METHOD = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field family static literal valuetype RestSharp.Method METHOD = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>RestSharp.Method</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="requestFactory">
+      <MemberSignature Language="C#" Value="protected readonly VistarClient.IRestRequestFactory requestFactory;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class VistarClient.IRestRequestFactory requestFactory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>VistarClient.IRestRequestFactory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="restClient">
+      <MemberSignature Language="C#" Value="protected readonly RestSharp.IRestClient restClient;" />
+      <MemberSignature Language="ILAsm" Value=".field family initonly class RestSharp.IRestClient restClient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>RestSharp.IRestClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
