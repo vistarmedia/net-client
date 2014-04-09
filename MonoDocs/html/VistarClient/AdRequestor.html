@@ -207,9 +207,9 @@
     </div>
     <h1 class="PageTitle" id="T:VistarClient.AdRequestor">AdRequestor  Class</h1>
     <p class="Summary" id="T:VistarClient.AdRequestor:Summary">Contains method for submitting the ad request</p>
-    <div id="T:VistarClient.AdRequestor:Signature">
+    <div>
       <h2>Syntax</h2>
-      <div class="Signature">public sealed class  <b>AdRequestor</b> : <a href="../VistarClient/IAdRequestor.html">IAdRequestor</a></div>
+      <div class="Signature" id="T:VistarClient.AdRequestor:Signature">public sealed class  <b>AdRequestor</b> : <a href="../VistarClient/RestService.html">RestService</a>,	<a href="../VistarClient/IAdRequestor.html">IAdRequestor</a></div>
     </div>
     <div class="Remarks" id="T:VistarClient.AdRequestor:Docs">
       <h2 class="Section">Remarks</h2>
@@ -217,12 +217,12 @@
       </div>
       <h2 class="Section">Requirements</h2>
       <div class="SectionBox" id="T:VistarClient.AdRequestor:Docs:Version Information">
-        <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4489.17318, 1.0.4489.18553, 1.0.4489.22141, 1.0.4496.27519, 1.0.4496.27578</div>
+        <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4489.17318, 1.0.4489.18553, 1.0.4489.22141, 1.0.4496.27519, 1.0.4496.27578, 1.0.5212.18353</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+								<a href="../VistarClient/RestService.html">RestService</a>.
 							</p>
         <h2 class="Section">Public Constructors</h2>
         <div class="SectionBox" id="Public Constructors">
@@ -236,7 +236,7 @@
                 <td>
                   <div>
                     <b>
-                      <a href="#C:VistarClient.AdRequestor">AdRequestor</a>
+                      <a href="#C:VistarClient.AdRequestor()">AdRequestor</a>
                     </b>()</div>
                 </td>
                 <td>Default constructor</td>
@@ -253,6 +253,70 @@
                     </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">RestSharp.IRestClient</a>, <a href="javascript:alert(&quot;Documentation not found.&quot;)">RestSharp.IRestRequest</a>)</div>
                 </td>
                 <td>Used for testing purposes only</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:VistarClient.AdRequestor(RestSharp.IRestClient,VistarClient.IRestRequestFactory)">AdRequestor</a>
+                    </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">RestSharp.IRestClient</a>, <a href="../VistarClient/IRestRequestFactory.html">IRestRequestFactory</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Protected Fields</h2>
+        <div class="SectionBox" id="Protected Fields">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>const </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../VistarClient/RestService.html#F:VistarClient.RestService.METHOD">METHOD</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="javascript:alert(&quot;Documentation not found.&quot;)">RestSharp.Method</a>
+                  </i> (1). <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../VistarClient/RestService.html">RestService</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>readonly </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../VistarClient/RestService.html#F:VistarClient.RestService.requestFactory">requestFactory</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../VistarClient/IRestRequestFactory.html">IRestRequestFactory</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../VistarClient/RestService.html">RestService</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>readonly </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../VistarClient/RestService.html#F:VistarClient.RestService.restClient">restClient</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="javascript:alert(&quot;Documentation not found.&quot;)">RestSharp.IRestClient</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span> (<i>Inherited from <a href="../VistarClient/RestService.html">RestService</a>.</i>)</td>
               </tr>
             </table>
           </div>
@@ -279,17 +343,17 @@
     <div class="Members" id="T:VistarClient.AdRequestor:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="C:VistarClient.AdRequestor">AdRequestor Constructor</h3>
-        <blockquote id="C:VistarClient.AdRequestor:member">
+        <h3 id="C:VistarClient.AdRequestor()">AdRequestor Constructor</h3>
+        <blockquote id="C:VistarClient.AdRequestor():member">
           <p class="Summary">Default constructor</p>
           <h2>Syntax</h2>
           <div class="Signature">public  <b>AdRequestor</b> ()</div>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="C:VistarClient.AdRequestor:Remarks">
+          <div class="SectionBox" id="C:VistarClient.AdRequestor():Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="C:VistarClient.AdRequestor:Version Information">
-            <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4489.18553, 1.0.4489.22141, 1.0.4496.27519, 1.0.4496.27578</div>
+          <div class="SectionBox" id="C:VistarClient.AdRequestor():Version Information">
+            <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4489.18553, 1.0.4489.22141, 1.0.4496.27519, 1.0.4496.27578, 1.0.5212.18353</div>
           <hr size="1" />
         </blockquote>
         <h3 id="C:VistarClient.AdRequestor(RestSharp.IRestClient,RestSharp.IRestRequest)">AdRequestor Constructor</h3>
@@ -318,6 +382,39 @@
             <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4489.22141, 1.0.4496.27519, 1.0.4496.27578</div>
           <hr size="1" />
         </blockquote>
+        <h3 id="C:VistarClient.AdRequestor(RestSharp.IRestClient,VistarClient.IRestRequestFactory)">AdRequestor Constructor</h3>
+        <blockquote id="C:VistarClient.AdRequestor(RestSharp.IRestClient,VistarClient.IRestRequestFactory):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>AdRequestor</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">RestSharp.IRestClient</a> restClient, <a href="../VistarClient/IRestRequestFactory.html">IRestRequestFactory</a> requestFactory)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="C:VistarClient.AdRequestor(RestSharp.IRestClient,VistarClient.IRestRequestFactory):Parameters">
+            <dl>
+              <dt>
+                <i>restClient</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>requestFactory</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:VistarClient.AdRequestor(RestSharp.IRestClient,VistarClient.IRestRequestFactory):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:VistarClient.AdRequestor(RestSharp.IRestClient,VistarClient.IRestRequestFactory):Version Information">
+            <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.5212.18353</div>
+          <hr size="1" />
+        </blockquote>
         <h3 id="M:VistarClient.AdRequestor.RunSubmitAdRequest(VistarClient.Entities.AdRequest)">RunSubmitAdRequest Method</h3>
         <blockquote id="M:VistarClient.AdRequestor.RunSubmitAdRequest(VistarClient.Entities.AdRequest):member">
           <p class="Summary">
@@ -342,7 +439,7 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:VistarClient.AdRequestor.RunSubmitAdRequest(VistarClient.Entities.AdRequest):Version Information">
-            <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4496.27519, 1.0.4496.27578</div>
+            <b>Namespace: </b>VistarClient<br /><b>Assembly: </b>VistarClient (in VistarClient.dll)<br /><b>Assembly Versions: </b>1.0.4496.27519, 1.0.4496.27578, 1.0.5212.18353</div>
           <hr size="1" />
         </blockquote>
       </div>

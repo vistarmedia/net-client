@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="VistarClient" Version="1.0.4496.27578">
+    <Assembly Name="VistarClient" Version="1.0.5212.18353">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>
@@ -26,6 +26,9 @@
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.0", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
       </Attributes>
     </Assembly>
   </Assemblies>
@@ -41,22 +44,35 @@
       <Type Name="ApiException" Kind="Class" />
       <Type Name="IAdRequestor" Kind="Interface" />
       <Type Name="InvalidLeaseException" Kind="Class" />
+      <Type Name="IRestRequestFactory" Kind="Interface" />
+      <Type Name="IVenueService" Kind="Interface" />
+      <Type Name="RestRequestFactory" Kind="Class" />
+      <Type Name="RestService" Kind="Class" />
+      <Type Name="VenueService" Kind="Class" />
+      <Type Name="VenueService+VenueSaveResponse" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Entities">
       <Type Name="AdRequest" Kind="Class" />
       <Type Name="Advertisement" Kind="Class" />
       <Type Name="DeviceAttribute" Kind="Class" />
       <Type Name="DisplayArea" Kind="Class" />
+      <Type Name="Venue" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Request">
+      <Type Name="AdRequestMessage" Kind="Class" />
       <Type Name="AdvertisementMessage" Kind="Class" />
       <Type Name="AdvertisementResponseMessage" Kind="Class" />
+      <Type Name="DeviceAttributeMessage" Kind="Class" />
+      <Type Name="DisplayAreaMessage" Kind="Class" />
+      <Type Name="ProofOfPlayMessage" Kind="Class" />
+      <Type Name="VenueMessage" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Utils">
       <Type Name="DateTimeExtensions" Kind="Class" />
       <Type Name="IVistarTaskFactory" Kind="Interface" />
       <Type Name="IVistarWebRequest" Kind="Interface" />
       <Type Name="IVistarWebRequestFactory" Kind="Interface" />
+      <Type Name="VistarGlobals" Kind="Class" />
       <Type Name="VistarTaskFactory" Kind="Class" />
       <Type Name="VistarWebException" Kind="Class" />
       <Type Name="VistarWebRequest" Kind="Class" />

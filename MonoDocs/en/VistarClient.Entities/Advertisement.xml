@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+    <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,6 +21,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -33,6 +35,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="requestFactory" Type="VistarClient.Utils.IVistarWebRequestFactory" />
@@ -44,11 +47,12 @@
       </Docs>
     </Member>
     <Member MemberName="AssetId">
-      <MemberSignature Language="C#" Value="public string AssetId { get; set; }" />
+      <MemberSignature Language="C#" Value="public string AssetId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -60,11 +64,12 @@
       </Docs>
     </Member>
     <Member MemberName="AssetUrl">
-      <MemberSignature Language="C#" Value="public string AssetUrl { get; set; }" />
+      <MemberSignature Language="C#" Value="public string AssetUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssetUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -76,11 +81,12 @@
       </Docs>
     </Member>
     <Member MemberName="DisplayAreaId">
-      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; set; }" />
+      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayAreaId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -91,12 +97,62 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DisplayTime">
+      <MemberSignature Language="C#" Value="public long DisplayTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 DisplayTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpirationUrl">
+      <MemberSignature Language="C#" Value="public string ExpirationUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExpirationUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayDateTime">
+      <MemberSignature Language="C#" Value="public DateTime GetDisplayDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetDisplayDateTime() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Height">
-      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
+      <MemberSignature Language="C#" Value="public int Height { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -108,11 +164,12 @@
       </Docs>
     </Member>
     <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -124,11 +181,12 @@
       </Docs>
     </Member>
     <Member MemberName="LeaseExpiry">
-      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; set; }" />
+      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 LeaseExpiry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -140,11 +198,12 @@
       </Docs>
     </Member>
     <Member MemberName="LengthInSeconds">
-      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LengthInSeconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -156,11 +215,12 @@
       </Docs>
     </Member>
     <Member MemberName="MimeType">
-      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
+      <MemberSignature Language="C#" Value="public string MimeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -172,11 +232,12 @@
       </Docs>
     </Member>
     <Member MemberName="ProofOfPlayUrl">
-      <MemberSignature Language="C#" Value="public string ProofOfPlayUrl { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual string ProofOfPlayUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProofOfPlayUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -193,6 +254,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -203,12 +265,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendProofOfPlay">
+      <MemberSignature Language="C#" Value="public void SendProofOfPlay (VistarClient.Request.ProofOfPlayMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendProofOfPlay(class VistarClient.Request.ProofOfPlayMessage message) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="VistarClient.Request.ProofOfPlayMessage" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Width">
-      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="C#" Value="public int Width { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

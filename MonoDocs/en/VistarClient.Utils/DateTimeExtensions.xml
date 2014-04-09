@@ -9,6 +9,7 @@
     <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+    <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -60,6 +62,7 @@
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -87,6 +90,7 @@
         <AssemblyVersion>1.0.4489.22141</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
+        <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
