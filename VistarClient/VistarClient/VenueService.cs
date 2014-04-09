@@ -23,9 +23,9 @@ namespace VistarClient {
       public string Resource { get; private set; }
       public Method Method { get; private set; }
 
-      public VenueSaveRequest(Venue venue, string resource, Method method) {
+      public VenueSaveRequest(Venue venue, string saveResource, Method method) {
         Venue = venue;
-        Resource = resource;
+        Resource = saveResource;
         Method = method;
       }
     }
@@ -43,17 +43,21 @@ namespace VistarClient {
       }
     }
 
-    const string RESOURCE = "/selling/venues/";
+    private string resource;
 
-    public VenueService()
+    public VenueService(string networkId)
       : base(new RestClient(GetHost()), new RestRequestFactory()) {
 
+      if(networkId == null) {
+        throw new ApiException("A networkId is required");
+      }
+      resource = "/selling/networks/" + networkId + "/venues/";
       restClient.CookieContainer = new CookieContainer();
       Authenticate();
     }
 
     public List<Venue> Get() {
-      var restRequest = requestFactory.Create(RESOURCE, Method.GET);
+      var restRequest = requestFactory.Create(resource, Method.GET);
       restRequest.OnBeforeDeserialization = resp => {
         resp.ContentType = "application/json";
       };
@@ -62,16 +66,16 @@ namespace VistarClient {
     }
 
     public void Create(Venue venue) {
-      Save(venue, RESOURCE, Method.POST);
+      Save(venue, resource, Method.POST);
     }
 
     public void Update(Venue venue) {
-      var resource = RESOURCE + venue.Id;
-      Save(venue, resource, Method.PUT);
+      var updateResource = resource + venue.PartnerVenueId;
+      Save(venue, updateResource, Method.PUT);
     }
 
-    void Save(Venue venue, string resource, Method method) {
-      var restRequest = GetRestRequest(venue, resource, method);
+    void Save(Venue venue, string saveResource, Method method) {
+      var restRequest = GetRestRequest(venue, saveResource, method);
 
       try {
         var response = restClient.Execute(restRequest);
@@ -87,18 +91,17 @@ namespace VistarClient {
 
     public List<Task<VenueSaveResponse>> Create(IEnumerable<Venue> venues) {
       var requests = venues.Select(v =>
-        new VenueSaveRequest(v, RESOURCE, Method.POST));
+        new VenueSaveRequest(v, resource, Method.POST));
       return Save(requests);
     }
 
     public List<Task<VenueSaveResponse>> Update(IEnumerable<Venue> venues) {
       return Save(venues.Select(v =>
-        new VenueSaveRequest(v, RESOURCE + v.Id, Method.PUT)));
+        new VenueSaveRequest(v, resource + v.PartnerVenueId, Method.PUT)));
     }
 
     List<Task<VenueSaveResponse>> Save(
           IEnumerable<VenueSaveRequest> requests) {
-      var taskFactory = new TaskFactory();
       var tasks = new List<Task<VenueSaveResponse>>();
       foreach (var request in requests) {
         var req = request;
@@ -149,12 +152,12 @@ namespace VistarClient {
       }
     }
 
-    IRestRequest GetRestRequest(Venue venue, string resource, Method method) {
-      var restRequest = requestFactory.Create(resource, method);
+    IRestRequest GetRestRequest(Venue venue, string getResource, Method method) {
+      var restRequest = requestFactory.Create(getResource, method);
       restRequest.RequestFormat = DataFormat.Json;
       string data = restRequest.JsonSerializer.Serialize(venue.ToMessage());
       data = Encoding.ASCII.GetString(Encoding.UTF8.GetBytes(data));
-      
+
       restRequest.AddParameter("application/json", data,
         ParameterType.RequestBody);
       restRequest.Timeout = 500;
@@ -170,7 +173,7 @@ namespace VistarClient {
       }
 
       throw new ApiException(
-        "You must specify an RestHost in your configuration file.");
+        "You must specify an RestUrl in your configuration file.");
     }
 
     static string GetUser() {
