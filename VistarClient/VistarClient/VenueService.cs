@@ -18,24 +18,24 @@ namespace VistarClient {
 
   public class VenueService : RestService, IVenueService {
 
-    class VenueSaveRequest {
+    class VenueRequest {
       public Venue Venue { get; private set; }
       public string Resource { get; private set; }
       public Method Method { get; private set; }
 
-      public VenueSaveRequest(Venue venue, string saveResource, Method method) {
+      public VenueRequest(Venue venue, string saveResource, Method method) {
         Venue = venue;
         Resource = saveResource;
         Method = method;
       }
     }
 
-    public class VenueSaveResponse {
+    public class VenueResponse {
       public string PartnerVenueId { get; private set; }
       public HttpStatusCode ResponseCode { get; private set; }
       public string ResponseText { get; private set; }
 
-      public VenueSaveResponse(string partnerVenueId,
+      public VenueResponse(string partnerVenueId,
           HttpStatusCode responseCode, string responseText) {
         PartnerVenueId = partnerVenueId;
         ResponseCode = responseCode;
@@ -89,41 +89,46 @@ namespace VistarClient {
       }
     }
 
-    public List<Task<VenueSaveResponse>> Create(IEnumerable<Venue> venues) {
+    public List<Task<VenueResponse>> Create(IEnumerable<Venue> venues) {
       var requests = venues.Select(v =>
-        new VenueSaveRequest(v, resource, Method.POST));
-      return Save(requests);
+        new VenueRequest(v, resource, Method.POST));
+      return Execute(requests);
     }
 
-    public List<Task<VenueSaveResponse>> Update(IEnumerable<Venue> venues) {
-      return Save(venues.Select(v =>
-        new VenueSaveRequest(v, resource + v.PartnerVenueId, Method.PUT)));
+    public List<Task<VenueResponse>> Update(IEnumerable<Venue> venues) {
+      return Execute(venues.Select(v =>
+        new VenueRequest(v, resource + v.PartnerVenueId, Method.PUT)));
     }
 
-    List<Task<VenueSaveResponse>> Save(
-          IEnumerable<VenueSaveRequest> requests) {
-      var tasks = new List<Task<VenueSaveResponse>>();
+    public List<Task<VenueResponse>> Delete(IEnumerable<Venue> venues) {
+      return Execute(venues.Select(v =>
+        new VenueRequest(v, resource + v.PartnerVenueId, Method.DELETE)));
+    }
+
+    List<Task<VenueResponse>> Execute(
+          IEnumerable<VenueRequest> requests) {
+      var tasks = new List<Task<VenueResponse>>();
       foreach (var request in requests) {
         var req = request;
         var task = Task.Factory.StartNew(() => {
-          return DoSave(req);
+          return DoAction(req);
         });
         tasks.Add(task);
       }
       return tasks;
     }
 
-    VenueSaveResponse DoSave(VenueSaveRequest request) {
+    VenueResponse DoAction(VenueRequest request) {
       var restRequest = GetRestRequest(request.Venue, request.Resource,
         request.Method);
 
       try {
         var response = restClient.Execute(restRequest);
-        return new VenueSaveResponse(request.Venue.PartnerVenueId,
+        return new VenueResponse(request.Venue.PartnerVenueId,
           response.StatusCode, response.StatusDescription);
       }
       catch (Exception ex) {
-        return new VenueSaveResponse(request.Venue.PartnerVenueId,
+        return new VenueResponse(request.Venue.PartnerVenueId,
           HttpStatusCode.InternalServerError, ex.Message);
       }
     }
@@ -145,7 +150,7 @@ namespace VistarClient {
 
         try {
           var response = request.GetResponse();
-          response.close();
+          response.Close();
         }
         catch (WebException ex) {
           throw new ApiException("Error authenticating: " + ex.Message);
