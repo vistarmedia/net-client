@@ -10,7 +10,7 @@ namespace VistarClient.Entities {
 
     public string Name { get; set; }
 
-    public double Gvt { get; set; }
+    public long Gvt { get; set; }
 
     public int GvtSeconds { get; set; }
 

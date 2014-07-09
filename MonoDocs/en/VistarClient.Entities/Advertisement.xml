@@ -47,7 +47,7 @@
       </Docs>
     </Member>
     <Member MemberName="AssetId">
-      <MemberSignature Language="C#" Value="public string AssetId { get; }" />
+      <MemberSignature Language="C#" Value="public string AssetId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -64,7 +64,7 @@
       </Docs>
     </Member>
     <Member MemberName="AssetUrl">
-      <MemberSignature Language="C#" Value="public string AssetUrl { get; }" />
+      <MemberSignature Language="C#" Value="public string AssetUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssetUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -81,7 +81,7 @@
       </Docs>
     </Member>
     <Member MemberName="DisplayAreaId">
-      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; }" />
+      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayAreaId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -147,7 +147,7 @@
       </Docs>
     </Member>
     <Member MemberName="Height">
-      <MemberSignature Language="C#" Value="public int Height { get; }" />
+      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -164,7 +164,7 @@
       </Docs>
     </Member>
     <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -181,7 +181,7 @@
       </Docs>
     </Member>
     <Member MemberName="LeaseExpiry">
-      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; }" />
+      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 LeaseExpiry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -198,7 +198,7 @@
       </Docs>
     </Member>
     <Member MemberName="LengthInSeconds">
-      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; }" />
+      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LengthInSeconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -215,7 +215,7 @@
       </Docs>
     </Member>
     <Member MemberName="MimeType">
-      <MemberSignature Language="C#" Value="public string MimeType { get; }" />
+      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -232,7 +232,7 @@
       </Docs>
     </Member>
     <Member MemberName="ProofOfPlayUrl">
-      <MemberSignature Language="C#" Value="public virtual string ProofOfPlayUrl { get; }" />
+      <MemberSignature Language="C#" Value="public string ProofOfPlayUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProofOfPlayUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
@@ -285,7 +285,7 @@
       </Docs>
     </Member>
     <Member MemberName="Width">
-      <MemberSignature Language="C#" Value="public int Width { get; }" />
+      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>

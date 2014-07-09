@@ -9,7 +9,7 @@ namespace VistarClient.Request {
 
     public string name { get; set; }
 
-    public double gvt { get; set; }
+    public long gvt { get; set; }
 
     public int gvt_seconds { get; set; }
 
