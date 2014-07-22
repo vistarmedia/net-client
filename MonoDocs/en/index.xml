@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="VistarClient" Version="1.0.4496.27578">
+    <Assembly Name="VistarClient" Version="1.0.5316.28956">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>
@@ -26,6 +26,9 @@
         <Attribute>
           <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.0", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
       </Attributes>
     </Assembly>
   </Assemblies>
@@ -46,6 +49,7 @@
       <Type Name="RestRequestFactory" Kind="Class" />
       <Type Name="RestService" Kind="Class" />
       <Type Name="VenueService" Kind="Class" />
+      <Type Name="VenueService+VenueResponse" Kind="Class" />
       <Type Name="VenueService+VenueSaveResponse" Kind="Class" />
     </Namespace>
     <Namespace Name="VistarClient.Entities">

@@ -5,6 +5,7 @@
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+    <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,6 +23,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="requestFactory" Type="VistarClient.Utils.IVistarWebRequestFactory" />
@@ -47,12 +50,13 @@
       </Docs>
     </Member>
     <Member MemberName="AssetId">
-      <MemberSignature Language="C#" Value="public string AssetId { get; set; }" />
+      <MemberSignature Language="C#" Value="public string AssetId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssetId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -64,12 +68,13 @@
       </Docs>
     </Member>
     <Member MemberName="AssetUrl">
-      <MemberSignature Language="C#" Value="public string AssetUrl { get; set; }" />
+      <MemberSignature Language="C#" Value="public string AssetUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssetUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -81,12 +86,13 @@
       </Docs>
     </Member>
     <Member MemberName="DisplayAreaId">
-      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; set; }" />
+      <MemberSignature Language="C#" Value="public string DisplayAreaId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayAreaId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -103,6 +109,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -119,6 +126,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -135,6 +143,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -147,12 +156,13 @@
       </Docs>
     </Member>
     <Member MemberName="Height">
-      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
+      <MemberSignature Language="C#" Value="public int Height { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -164,12 +174,13 @@
       </Docs>
     </Member>
     <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -181,12 +192,13 @@
       </Docs>
     </Member>
     <Member MemberName="LeaseExpiry">
-      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; set; }" />
+      <MemberSignature Language="C#" Value="public long LeaseExpiry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 LeaseExpiry" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -198,12 +210,13 @@
       </Docs>
     </Member>
     <Member MemberName="LengthInSeconds">
-      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; set; }" />
+      <MemberSignature Language="C#" Value="public int LengthInSeconds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LengthInSeconds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -215,12 +228,13 @@
       </Docs>
     </Member>
     <Member MemberName="MimeType">
-      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
+      <MemberSignature Language="C#" Value="public string MimeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -232,12 +246,13 @@
       </Docs>
     </Member>
     <Member MemberName="ProofOfPlayUrl">
-      <MemberSignature Language="C#" Value="public string ProofOfPlayUrl { get; set; }" />
+      <MemberSignature Language="C#" Value="public virtual string ProofOfPlayUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProofOfPlayUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -255,6 +270,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -271,6 +287,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -285,12 +302,13 @@
       </Docs>
     </Member>
     <Member MemberName="Width">
-      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="C#" Value="public int Width { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
