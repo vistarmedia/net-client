@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+    <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,6 +21,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -33,6 +35,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -49,6 +52,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -65,6 +69,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -81,6 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -97,6 +103,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -113,6 +120,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -129,6 +137,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -145,6 +154,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
@@ -161,6 +171,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

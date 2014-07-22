@@ -4,6 +4,7 @@
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+    <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>VistarClient.RestService</BaseTypeName>
@@ -24,6 +25,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="networkId" Type="System.String" />
@@ -31,6 +33,26 @@
       <Docs>
         <param name="networkId">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService.VenueResponse&gt;&gt; Create (System.Collections.Generic.IEnumerable&lt;VistarClient.Entities.Venue&gt; venues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class System.Threading.Tasks.Task`1&lt;class VistarClient.VenueService/VenueResponse&gt;&gt; Create(class System.Collections.Generic.IEnumerable`1&lt;class VistarClient.Entities.Venue&gt; venues) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService+VenueResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="venues" Type="System.Collections.Generic.IEnumerable&lt;VistarClient.Entities.Venue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="venues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -60,6 +82,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -73,18 +96,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService.VenueResponse&gt;&gt; Delete (System.Collections.Generic.IEnumerable&lt;VistarClient.Entities.Venue&gt; venues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class System.Threading.Tasks.Task`1&lt;class VistarClient.VenueService/VenueResponse&gt;&gt; Delete(class System.Collections.Generic.IEnumerable`1&lt;class VistarClient.Entities.Venue&gt; venues) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService+VenueResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="venues" Type="System.Collections.Generic.IEnumerable&lt;VistarClient.Entities.Venue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="venues">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;VistarClient.Entities.Venue&gt; Get ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class VistarClient.Entities.Venue&gt; Get() cil managed" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Venue&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService.VenueResponse&gt;&gt; Update (System.Collections.Generic.IEnumerable&lt;VistarClient.Entities.Venue&gt; venues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.List`1&lt;class System.Threading.Tasks.Task`1&lt;class VistarClient.VenueService/VenueResponse&gt;&gt; Update(class System.Collections.Generic.IEnumerable`1&lt;class VistarClient.Entities.Venue&gt; venues) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService+VenueResponse&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="venues" Type="System.Collections.Generic.IEnumerable&lt;VistarClient.Entities.Venue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="venues">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -116,6 +180,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

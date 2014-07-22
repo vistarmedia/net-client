@@ -9,6 +9,7 @@
     <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+    <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -26,6 +27,7 @@
         <AssemblyVersion>1.0.4496.27519</AssemblyVersion>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;&gt;</ReturnType>

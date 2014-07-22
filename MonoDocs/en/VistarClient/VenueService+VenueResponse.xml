@@ -1,0 +1,86 @@
+<Type Name="VenueService+VenueResponse" FullName="VistarClient.VenueService+VenueResponse">
+  <TypeSignature Language="C#" Value="public class VenueService.VenueResponse" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit VenueService/VenueResponse extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>VistarClient</AssemblyName>
+    <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VenueResponse (string partnerVenueId, System.Net.HttpStatusCode responseCode, string responseText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string partnerVenueId, valuetype System.Net.HttpStatusCode responseCode, string responseText) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="partnerVenueId" Type="System.String" />
+        <Parameter Name="responseCode" Type="System.Net.HttpStatusCode" />
+        <Parameter Name="responseText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="partnerVenueId">To be added.</param>
+        <param name="responseCode">To be added.</param>
+        <param name="responseText">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartnerVenueId">
+      <MemberSignature Language="C#" Value="public string PartnerVenueId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PartnerVenueId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseCode">
+      <MemberSignature Language="C#" Value="public System.Net.HttpStatusCode ResponseCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.HttpStatusCode ResponseCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseText">
+      <MemberSignature Language="C#" Value="public string ResponseText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

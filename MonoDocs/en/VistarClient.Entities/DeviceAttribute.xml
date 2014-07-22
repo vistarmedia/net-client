@@ -5,6 +5,7 @@
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+    <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,6 +23,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -53,6 +56,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
+        <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

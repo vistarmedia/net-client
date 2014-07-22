@@ -32,14 +32,6 @@ namespace VistarClient.Entities {
 
     public string ZipCode { get; set; }
 
-    public double NoticePercent { get; set; }
-
-    public bool HasAudio { get; set; }
-
-    public double HoursPerDay { get; set; }
-
-    public int DaysPerWeek { get; set; }
-
     public string VenueType { get; set; }
 
     internal VenueMessage ToMessage() {
