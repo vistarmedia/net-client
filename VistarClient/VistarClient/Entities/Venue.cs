@@ -10,7 +10,9 @@ namespace VistarClient.Entities {
 
     public string Name { get; set; }
 
-    public int Gvt { get; set; }
+    public long Gvt { get; set; }
+
+    public int GvtSeconds { get; set; }
 
     public int DwellTime { get; set; }
 
@@ -44,7 +46,8 @@ namespace VistarClient.Entities {
       return new VenueMessage {
         network_id = NetworkId,
         name = Name,
-        raw_gvt = Gvt,
+        gvt = Gvt,
+        gvt_seconds = GvtSeconds,
         dwell_time = DwellTime,
         cpm_floor_cents = CpmFloor,
         partner_venue_id = PartnerVenueId,
@@ -54,10 +57,6 @@ namespace VistarClient.Entities {
         city = City,
         state = State,
         zip_code = ZipCode,
-        notice_percent = NoticePercent,
-        has_audio = HasAudio,
-        hours_per_day = HoursPerDay,
-        days_per_week = DaysPerWeek,
         venue_type = VenueType
       };
     }
@@ -66,7 +65,8 @@ namespace VistarClient.Entities {
       return new Venue {
         NetworkId = message.network_id,
         Name = message.name,
-        Gvt = message.raw_gvt,
+        Gvt = message.gvt,
+        GvtSeconds = message.gvt_seconds,
         DwellTime = message.dwell_time,
         CpmFloor = message.cpm_floor_cents,
         PartnerVenueId = message.partner_venue_id,
@@ -76,10 +76,6 @@ namespace VistarClient.Entities {
         City = message.city,
         State = message.state,
         ZipCode = message.zip_code,
-        NoticePercent = message.notice_percent,
-        HasAudio = message.has_audio,
-        HoursPerDay = message.hours_per_day,
-        DaysPerWeek = message.days_per_week,
         VenueType = message.venue_type
       };
     }

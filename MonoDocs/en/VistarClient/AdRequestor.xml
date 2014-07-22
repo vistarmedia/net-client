@@ -1,6 +1,6 @@
 <Type Name="AdRequestor" FullName="VistarClient.AdRequestor">
-  <TypeSignature Language="C#" Value="public sealed class AdRequestor : VistarClient.RestService, VistarClient.IAdRequestor" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AdRequestor extends VistarClient.RestService implements class VistarClient.IAdRequestor" />
+  <TypeSignature Language="C#" Value="public sealed class AdRequestor : VistarClient.IAdRequestor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AdRequestor extends System.Object implements class VistarClient.IAdRequestor" />
   <AssemblyInfo>
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.4489.17318</AssemblyVersion>
@@ -11,7 +11,7 @@
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>VistarClient.RestService</BaseTypeName>
+    <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>

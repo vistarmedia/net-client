@@ -9,7 +9,9 @@ namespace VistarClient.Request {
 
     public string name { get; set; }
 
-    public int raw_gvt { get; set; }
+    public long gvt { get; set; }
+
+    public int gvt_seconds { get; set; }
 
     public int dwell_time { get; set; }
 
@@ -28,14 +30,6 @@ namespace VistarClient.Request {
     public string state { get; set; }
 
     public string zip_code { get; set; }
-
-    public double notice_percent { get; set; }
-
-    public bool has_audio { get; set; }
-
-    public double hours_per_day { get; set; }
-
-    public int days_per_week { get; set; }
 
     public string venue_type { get; set; }
   }
