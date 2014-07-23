@@ -24,6 +24,10 @@ namespace VistarClient {
       public Method Method { get; private set; }
 
       public VenueRequest(Venue venue, string saveResource, Method method) {
+        if(venue.HasPendingEdits && method != Method.POST) {
+          throw new ApiException(
+            "Cannot edit venue pending approval: " + venue.PartnerVenueId);
+        }
         Venue = venue;
         Resource = saveResource;
         Method = method;
@@ -43,21 +47,17 @@ namespace VistarClient {
       }
     }
 
-    private string resource;
+    const string RESOURCE = "/selling/venues/";
 
-    public VenueService(string networkId)
+    public VenueService()
       : base(new RestClient(GetHost()), new RestRequestFactory()) {
 
-      if(networkId == null) {
-        throw new ApiException("A networkId is required");
-      }
-      resource = "/selling/networks/" + networkId + "/venues/";
       restClient.CookieContainer = new CookieContainer();
       Authenticate();
     }
 
     public List<Venue> Get() {
-      var restRequest = requestFactory.Create(resource, Method.GET);
+      var restRequest = requestFactory.Create(RESOURCE, Method.GET);
       restRequest.OnBeforeDeserialization = resp => {
         resp.ContentType = "application/json";
       };
@@ -66,11 +66,15 @@ namespace VistarClient {
     }
 
     public void Create(Venue venue) {
-      Save(venue, resource, Method.POST);
+      Save(venue, RESOURCE, Method.POST);
     }
 
     public void Update(Venue venue) {
-      var updateResource = resource + venue.PartnerVenueId;
+      if(venue.HasPendingEdits) {
+        throw new ApiException(
+          "Cannot edit venue pending approval: " + venue.PartnerVenueId);
+      }
+      var updateResource = RESOURCE + venue.Id;
       Save(venue, updateResource, Method.PUT);
     }
 
@@ -91,18 +95,18 @@ namespace VistarClient {
 
     public List<Task<VenueResponse>> Create(IEnumerable<Venue> venues) {
       var requests = venues.Select(v =>
-        new VenueRequest(v, resource, Method.POST));
+        new VenueRequest(v, RESOURCE, Method.POST));
       return Execute(requests);
     }
 
     public List<Task<VenueResponse>> Update(IEnumerable<Venue> venues) {
       return Execute(venues.Select(v =>
-        new VenueRequest(v, resource + v.PartnerVenueId, Method.PUT)));
+        new VenueRequest(v, RESOURCE + v.Id, Method.PUT)));
     }
 
     public List<Task<VenueResponse>> Delete(IEnumerable<Venue> venues) {
       return Execute(venues.Select(v =>
-        new VenueRequest(v, resource + v.PartnerVenueId, Method.DELETE)));
+        new VenueRequest(v, RESOURCE + v.Id, Method.DELETE)));
     }
 
     List<Task<VenueResponse>> Execute(

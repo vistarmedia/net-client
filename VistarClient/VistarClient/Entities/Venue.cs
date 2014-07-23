@@ -6,6 +6,8 @@ using VistarClient.Request;
 
 namespace VistarClient.Entities {
   public class Venue {
+    public string Id { get; set; }
+
     public string NetworkId { get; set; }
 
     public string Name { get; set; }
@@ -34,8 +36,11 @@ namespace VistarClient.Entities {
 
     public string VenueType { get; set; }
 
+    public bool HasPendingEdits { get; set; }
+
     internal VenueMessage ToMessage() {
       return new VenueMessage {
+        id = Id,
         network_id = NetworkId,
         name = Name,
         gvt = Gvt,
@@ -49,12 +54,14 @@ namespace VistarClient.Entities {
         city = City,
         state = State,
         zip_code = ZipCode,
-        venue_type = VenueType
+        venue_type = VenueType,
+        has_pending_edits = HasPendingEdits
       };
     }
 
     internal static Venue FromMessage(VenueMessage message) {
       return new Venue {
+        Id = message.id,
         NetworkId = message.network_id,
         Name = message.name,
         Gvt = message.gvt,
@@ -68,7 +75,8 @@ namespace VistarClient.Entities {
         City = message.city,
         State = message.state,
         ZipCode = message.zip_code,
-        VenueType = message.venue_type
+        VenueType = message.venue_type,
+        HasPendingEdits = message.has_pending_edits
       };
     }
   }

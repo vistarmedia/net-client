@@ -5,6 +5,8 @@ using System.Text;
 
 namespace VistarClient.Request {
   public class VenueMessage {
+    public string id { get; set; }
+
     public string network_id { get; set; }
 
     public string name { get; set; }
@@ -32,5 +34,7 @@ namespace VistarClient.Request {
     public string zip_code { get; set; }
 
     public string venue_type { get; set; }
+
+    public bool has_pending_edits { get; set; }
   }
 }

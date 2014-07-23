@@ -5,6 +5,7 @@
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+    <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,6 +23,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -53,6 +56,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Request.DeviceAttributeMessage&gt;</ReturnType>
@@ -70,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -87,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -104,6 +110,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Request.DisplayAreaMessage&gt;</ReturnType>
@@ -121,6 +128,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -138,6 +146,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -155,6 +164,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -172,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -189,6 +200,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Decimal&gt;</ReturnType>
@@ -206,6 +218,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Decimal&gt;</ReturnType>
@@ -223,6 +236,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -240,6 +254,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

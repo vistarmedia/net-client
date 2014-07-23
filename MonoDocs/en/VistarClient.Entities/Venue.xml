@@ -5,6 +5,7 @@
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+    <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,6 +23,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -36,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -53,6 +56,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -86,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -103,6 +108,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -119,6 +125,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -145,6 +152,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HasPendingEdits">
+      <MemberSignature Language="C#" Value="public bool HasPendingEdits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasPendingEdits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HoursPerDay">
       <MemberSignature Language="C#" Value="public double HoursPerDay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 HoursPerDay" />
@@ -161,6 +184,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Latitude">
       <MemberSignature Language="C#" Value="public double Latitude { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Latitude" />
@@ -168,6 +207,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -185,6 +225,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -202,6 +243,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -219,6 +261,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -252,6 +295,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -269,6 +313,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -286,6 +331,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -303,6 +349,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -320,6 +367,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

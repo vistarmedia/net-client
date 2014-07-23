@@ -8,6 +8,7 @@
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+    <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -25,6 +26,7 @@
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Advertisement&gt;</ReturnType>

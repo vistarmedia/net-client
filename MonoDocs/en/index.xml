@@ -1,6 +1,6 @@
 <Overview>
   <Assemblies>
-    <Assembly Name="VistarClient" Version="1.0.5316.28956">
+    <Assembly Name="VistarClient" Version="1.0.5317.30060">
       <Attributes>
         <Attribute>
           <AttributeName>System.Reflection.AssemblyCompany("VistarMedia")</AttributeName>

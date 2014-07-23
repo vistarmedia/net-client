@@ -6,6 +6,7 @@
     <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+    <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,6 +25,7 @@
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,6 +41,7 @@
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -57,6 +60,7 @@
         <AssemblyVersion>1.0.4496.27578</AssemblyVersion>
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
+        <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
