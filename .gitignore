@@ -5,6 +5,7 @@ obj
 *.pidb
 test-results
 run_test.sh
+TestResult.xml
 TestResults.xml
 *VisualState.xml
 *.suo

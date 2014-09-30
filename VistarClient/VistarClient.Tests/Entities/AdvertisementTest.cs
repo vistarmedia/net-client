@@ -16,12 +16,12 @@ namespace VistarClient.Tests.Entities {
 
       var requestFactory = mockery.StrictMock<IVistarWebRequestFactory>();
       var request = mockery.StrictMock<IVistarWebRequest>();
-      var response = mockery.PartialMock<WebResponse>();
+      var response = mockery.DynamicMock<WebResponse>();
       var advertisement = mockery.PartialMock<Advertisement>(requestFactory);
 
       using (mockery.Record()) {
-        Expect.Call(advertisement.ProofOfPlayUrl).Return("My URL");
-        Expect.Call(requestFactory.Create("My URL")).Return(request);
+        Expect.Call(advertisement.ProofOfPlayUrl).Return("http://example.com");
+        Expect.Call(requestFactory.Create("http://example.com")).Return(request);
         Expect.Call(request.Get()).Return(response);
       }
 
@@ -41,8 +41,8 @@ namespace VistarClient.Tests.Entities {
       var exception = new VistarWebException(new WebException(), HttpStatusCode.BadRequest);
 
       using (mockery.Record()) {
-        Expect.Call(advertisement.ProofOfPlayUrl).Return("My URL");
-        Expect.Call(requestFactory.Create("My URL")).Return(request);
+        Expect.Call(advertisement.ProofOfPlayUrl).Return("http://example.com");
+        Expect.Call(requestFactory.Create("http://example.com")).Return(request);
         Expect.Call(request.Get()).Throw(exception);
       }
 
@@ -64,8 +64,8 @@ namespace VistarClient.Tests.Entities {
       var exception = new VistarWebException(new WebException(), HttpStatusCode.RequestTimeout);
 
       using (mockery.Record()) {
-        Expect.Call(advertisement.ProofOfPlayUrl).Return("My URL");
-        Expect.Call(requestFactory.Create("My URL")).Return(request);
+        Expect.Call(advertisement.ProofOfPlayUrl).Return("http://example.com");
+        Expect.Call(requestFactory.Create("http://example.com")).Return(request);
         Expect.Call(request.Get()).Throw(exception);
       }
 
@@ -82,12 +82,12 @@ namespace VistarClient.Tests.Entities {
 
       var requestFactory = mockery.StrictMock<IVistarWebRequestFactory>();
       var request = mockery.StrictMock<IVistarWebRequest>();
-      var response = mockery.PartialMock<WebResponse>();
+      var response = mockery.DynamicMock<WebResponse>();
       var advertisement = mockery.PartialMock<Advertisement>(requestFactory);
 
       var displayTime = new DateTime(2013, 4, 23);
       var expectedJson =
-        string.Format("{{\"display_time\": {0}, \"number_of_screens\": 2}}",
+        string.Format("{{\"display_time\": {0}}}",
           displayTime.ToUtcUnixTime());
 
       using (mockery.Record()) {
