@@ -145,7 +145,7 @@ namespace VistarClient {
 
         try {
           var response = request.GetResponse();
-          response.close();
+          response.Close();
         }
         catch (WebException ex) {
           throw new ApiException("Error authenticating: " + ex.Message);

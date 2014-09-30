@@ -7,6 +7,6 @@
   </Target>
   <Target Name="BuildWithTests" DependsOnTargets="Build">
     <!--<NUnit ToolPath="/usr/bin/nunit-console" Assemblies="VistarClient/VistarClient.Tests/bin/Release/VistarClient.Tests.dll" />-->
-    <Exec Command="nunit-console VistarClient/VistarClient.Tests/bin/Release/VistarClient.Tests.dll" />
+    <Exec Command="nunit-console VistarClient/VistarClient.Tests/bin/Debug/VistarClient.Tests.dll" />
   </Target>
 </Project>
