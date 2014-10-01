@@ -22,9 +22,9 @@ namespace VistarClient.Entities {
 
     public string PartnerVenueId { get; set; }
 
-    public double Latitude { get; }
+    public double Latitude { get; set; }
 
-    public double Longitude { get; }
+    public double Longitude { get; set; }
 
     public string StreetAddress { get; set; }
 
@@ -48,6 +48,8 @@ namespace VistarClient.Entities {
         dwell_time = DwellTime,
         cpm_floor_cents = CpmFloor,
         partner_venue_id = PartnerVenueId,
+        latitude = Latitude,
+        longitude = Longitude,
         street_address = StreetAddress,
         city = City,
         state = State,
