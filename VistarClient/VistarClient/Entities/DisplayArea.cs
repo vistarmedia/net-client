@@ -16,6 +16,8 @@ namespace VistarClient.Entities {
 
     public int? MaxDuration { get; set; }
 
+    public int? StaticDuration { get; set; }
+
     public bool AllowAudio { get; set; }
 
     public int CpmFloorCents { get; set; }
@@ -30,6 +32,7 @@ namespace VistarClient.Entities {
         supported_media = SupportedMedia,
         min_duration = MinDuration,
         max_duration = MaxDuration,
+        static_duration = StaticDuration,
         allow_audio = AllowAudio,
         cpm_floor_cents = CpmFloorCents,
         order_id = OrderId
