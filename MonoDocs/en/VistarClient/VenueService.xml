@@ -6,6 +6,7 @@
     <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
     <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+    <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>VistarClient.RestService</BaseTypeName>
@@ -26,6 +27,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -57,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService+VenueResponse&gt;&gt;</ReturnType>
@@ -99,6 +102,7 @@
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -119,6 +123,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService+VenueResponse&gt;&gt;</ReturnType>
@@ -141,6 +146,7 @@
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;VistarClient.Entities.Venue&gt;</ReturnType>
@@ -159,6 +165,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Threading.Tasks.Task&lt;VistarClient.VenueService+VenueResponse&gt;&gt;</ReturnType>
@@ -201,6 +208,7 @@
         <AssemblyVersion>1.0.5212.18353</AssemblyVersion>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

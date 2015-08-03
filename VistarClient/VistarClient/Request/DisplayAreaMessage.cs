@@ -15,6 +15,8 @@ namespace VistarClient.Request {
 
     public int? max_duration { get; set; }
 
+    public int? static_duration { get; set; }
+
     public bool allow_audio { get; set; }
 
     public int cpm_floor_cents { get; set; }

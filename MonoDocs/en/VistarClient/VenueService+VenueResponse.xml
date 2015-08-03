@@ -5,6 +5,7 @@
     <AssemblyName>VistarClient</AssemblyName>
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
     <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+    <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,6 +23,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="partnerVenueId" Type="System.String" />
@@ -43,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -60,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.HttpStatusCode</ReturnType>
@@ -77,6 +81,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
+        <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
