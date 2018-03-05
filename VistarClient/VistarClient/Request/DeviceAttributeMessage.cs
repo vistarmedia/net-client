@@ -7,4 +7,3 @@ namespace VistarClient.Request {
     public string @value { get; set; }
   }
 }
-

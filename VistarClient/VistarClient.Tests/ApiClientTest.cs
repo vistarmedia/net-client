@@ -33,4 +33,3 @@ namespace VistarClient.Tests.Request {
     }
   }
 }
-

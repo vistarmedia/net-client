@@ -28,4 +28,3 @@ namespace VistarClient.Request {
     public long display_time { get; set; }
   }
 }
-

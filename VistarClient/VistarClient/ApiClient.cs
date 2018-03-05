@@ -1,10 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using RestSharp;
 using VistarClient.Entities;
 using VistarClient.Request;
-using System.Threading;
-using System.Collections.Generic;
 
 namespace VistarClient {
   public class ApiClient {

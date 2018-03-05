@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using VistarClient.Entities;
-using VistarClient.Utils;
 using VistarClient.Request;
-
+using VistarClient.Utils;
 
 namespace VistarClient.Entities {
   public class AdRequest {
@@ -19,9 +18,9 @@ namespace VistarClient.Entities {
     public bool DirectConnection { get; set; }
 
     public decimal? Latitude { get; set; }
-    
+
     public decimal? Longitude { get; set; }
-    
+
     public string Dma { get; set; }
 
     public string VenueId { get; set; }
