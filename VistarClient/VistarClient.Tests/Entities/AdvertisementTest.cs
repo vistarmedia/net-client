@@ -1,10 +1,10 @@
+using System;
 using System.Net;
 using NUnit.Framework;
 using Rhino.Mocks;
 using VistarClient.Entities;
-using VistarClient.Utils;
-using System;
 using VistarClient.Request;
+using VistarClient.Utils;
 
 namespace VistarClient.Tests.Entities {
   [TestFixture]

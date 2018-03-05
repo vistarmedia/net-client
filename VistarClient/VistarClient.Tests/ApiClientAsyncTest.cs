@@ -1,14 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using NUnit.Framework;
 using RestSharp.Serializers;
 using Rhino.Mocks;
 using Is = Rhino.Mocks.Constraints.Is;
 using VistarClient;
-using VistarClient.Utils;
-using VistarClient.Request;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 using VistarClient.Entities;
-using System;
+using VistarClient.Request;
+using VistarClient.Utils;
 
 namespace VistarClient.Tests {
   public class ApiClientAsyncTest {
@@ -44,4 +44,3 @@ namespace VistarClient.Tests {
     }
   }
 }
-
