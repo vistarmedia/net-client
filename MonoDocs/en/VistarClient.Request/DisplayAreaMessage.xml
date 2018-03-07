@@ -7,6 +7,7 @@
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
     <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
     <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+    <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,6 +44,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -61,6 +64,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -80,6 +84,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -99,6 +104,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -118,6 +124,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -137,6 +144,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -156,6 +164,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -172,6 +181,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
@@ -191,6 +201,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
@@ -210,6 +221,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.6640.15746</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
