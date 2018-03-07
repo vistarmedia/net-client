@@ -19,7 +19,7 @@ namespace VistarClient.Entities {
 
     public virtual string ProofOfPlayUrl { get; private set; }
 
-    public string ExpirationUrl { get; private set; }
+    public virtual string ExpirationUrl { get; private set; }
 
     public long LeaseExpiry { get; private set; }
 
@@ -44,7 +44,19 @@ namespace VistarClient.Entities {
     }
 
     public void SendProofOfPlay() {
-      var request = requestFactory.Create(ProofOfPlayUrl);
+      SendGetRequest(ProofOfPlayUrl);
+    }
+
+    public void SendProofOfPlay(ProofOfPlayMessage message) {
+      message.Send(ProofOfPlayUrl);
+    }
+
+    public void SendExpiration() {
+      SendGetRequest(ExpirationUrl);
+    }
+
+    private void SendGetRequest(String url) {
+      var request = requestFactory.Create(url);
 
       try {
         var response = request.Get();
@@ -58,10 +70,6 @@ namespace VistarClient.Entities {
           throw new ApiException(ex.Message);
         }
       }
-    }
-
-    public void SendProofOfPlay(ProofOfPlayMessage message) {
-      message.Send(ProofOfPlayUrl);
     }
 
     internal static Advertisement FromMessage(AdvertisementMessage message) {

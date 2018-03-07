@@ -104,5 +104,71 @@ namespace VistarClient.Tests.Entities {
         );
       }
     }
+
+    [Test]
+    public void SendExpiration() {
+      var mockery = new MockRepository();
+
+      var requestFactory = mockery.StrictMock<IVistarWebRequestFactory>();
+      var request = mockery.StrictMock<IVistarWebRequest>();
+      var response = mockery.DynamicMock<WebResponse>();
+      var advertisement = mockery.PartialMock<Advertisement>(requestFactory);
+
+      using (mockery.Record()) {
+        Expect.Call(advertisement.ExpirationUrl).Return("http://example.com");
+        Expect.Call(requestFactory.Create("http://example.com")).Return(request);
+        Expect.Call(request.Get()).Return(response);
+      }
+
+      using (mockery.Playback()) {
+        advertisement.SendExpiration();
+      }
+    }
+
+    [Test]
+    public void SendExpiration_Throws_InvalidLeaseException_When_BadRequest() {
+      var mockery = new MockRepository();
+
+      var requestFactory = mockery.StrictMock<IVistarWebRequestFactory>();
+      var request = mockery.StrictMock<IVistarWebRequest>();
+      var advertisement = mockery.PartialMock<Advertisement>(requestFactory);
+
+      var exception = new VistarWebException(new WebException(), HttpStatusCode.BadRequest);
+
+      using (mockery.Record()) {
+        Expect.Call(advertisement.ExpirationUrl).Return("http://example.com");
+        Expect.Call(requestFactory.Create("http://example.com")).Return(request);
+        Expect.Call(request.Get()).Throw(exception);
+      }
+
+      using (mockery.Playback()) {
+        Assert.Throws(typeof(InvalidLeaseException), () => {
+          advertisement.SendExpiration();
+        });
+      }
+    }
+
+    [Test]
+    public void SendExpiration_Throws_ApiException_When_Error_NotBadRequest() {
+      var mockery = new MockRepository();
+
+      var requestFactory = mockery.StrictMock<IVistarWebRequestFactory>();
+      var request = mockery.StrictMock<IVistarWebRequest>();
+      var advertisement = mockery.PartialMock<Advertisement>(requestFactory);
+
+      var exception = new VistarWebException(new WebException(), HttpStatusCode.RequestTimeout);
+
+      using (mockery.Record()) {
+        Expect.Call(advertisement.ExpirationUrl).Return("http://example.com");
+        Expect.Call(requestFactory.Create("http://example.com")).Return(request);
+        Expect.Call(request.Get()).Throw(exception);
+      }
+
+      using (mockery.Playback()) {
+        Assert.Throws(typeof(ApiException), () => {
+          advertisement.SendExpiration();
+        });
+      }
+    }
   }
 }
