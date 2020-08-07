@@ -7,6 +7,7 @@
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
     <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
     <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+    <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,6 +44,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -61,6 +64,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -96,6 +100,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -115,6 +120,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -133,6 +139,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -166,6 +173,7 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -199,9 +207,42 @@
       <AssemblyInfo>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImpressionsPerSec">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; ImpressionsPerSec { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; ImpressionsPerSec" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImpressionsPerSpot">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; ImpressionsPerSpot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; ImpressionsPerSpot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
@@ -218,6 +259,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -237,6 +279,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -256,6 +299,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -275,6 +319,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -310,6 +355,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -329,6 +375,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -348,6 +395,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -367,6 +415,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -386,6 +435,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

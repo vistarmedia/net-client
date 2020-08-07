@@ -7,6 +7,7 @@
     <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
     <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
     <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+    <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,6 +27,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,6 +44,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="requestFactory" Type="VistarClient.Utils.IVistarWebRequestFactory" />
@@ -61,6 +64,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -80,6 +84,7 @@
         <AssemblyVersion>1.0.5316.28956</AssemblyVersion>
         <AssemblyVersion>1.0.5317.30060</AssemblyVersion>
         <AssemblyVersion>1.0.5693.30132</AssemblyVersion>
+        <AssemblyVersion>1.0.7524.19670</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -18,6 +18,10 @@ namespace VistarClient.Entities {
 
     public int DwellTime { get; set; }
 
+    public double? ImpressionsPerSpot { get; set; }
+
+    public double? ImpressionsPerSec { get; set; }
+
     public double CpmFloor { get; set; }
 
     public string PartnerVenueId { get; set; }
@@ -47,6 +51,8 @@ namespace VistarClient.Entities {
         gvt_seconds = GvtSeconds,
         dwell_time = DwellTime,
         cpm_floor_cents = CpmFloor,
+        impressions_per_spot = ImpressionsPerSpot,
+        impressions_per_sec = ImpressionsPerSec,
         partner_venue_id = PartnerVenueId,
         latitude = Latitude,
         longitude = Longitude,
@@ -67,6 +73,8 @@ namespace VistarClient.Entities {
         Gvt = message.gvt,
         GvtSeconds = message.gvt_seconds,
         DwellTime = message.dwell_time,
+        ImpressionsPerSpot = message.impressions_per_spot,
+        ImpressionsPerSec = message.impressions_per_sec,
         CpmFloor = message.cpm_floor_cents,
         PartnerVenueId = message.partner_venue_id,
         Latitude = message.latitude,
