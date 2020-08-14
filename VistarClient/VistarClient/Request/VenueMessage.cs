@@ -17,6 +17,10 @@ namespace VistarClient.Request {
 
     public int dwell_time { get; set; }
 
+    public double? impressions_per_spot { get; set; }
+
+    public double? impressions_per_sec { get; set; }
+
     public double cpm_floor_cents { get; set; }
 
     public string partner_venue_id { get; set; }
